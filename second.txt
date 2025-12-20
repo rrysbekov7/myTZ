@@ -1,1 +1,1 @@
-Hi! I am second file!
+Hello my friend! I'm modified file now!
