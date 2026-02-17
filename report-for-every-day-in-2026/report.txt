@@ -25,3 +25,8 @@
 16.02.26
 1)Duolingo - 1lesson - DONE!
 2)2hours - IT
+=================
+17.02.26
+1)Duolingo - 1lesson - DONE!
+2)3hours - IT - DONE!
+3)Python basics - continue - DONE!
