@@ -63,6 +63,11 @@
 =================
 23.02.2026
 1)Duolingo - 1lesson - DONE!
-2)1hour - IT -DONE!
+2)3hour - IT -DONE!
 3)Python basics - continue - DONE!
-
+=================
+24.02.206
+1)Duolingo - 1lesson
+2)3hours - IT
+3)Python basics - continue
+4)Week 10 DevOps beginning
