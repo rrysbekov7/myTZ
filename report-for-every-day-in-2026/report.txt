@@ -85,3 +85,7 @@
 1)Duolingo - 1lesson - DONE!
 2)3hours - IT - DONE!
 3)Python basics - continue - DONE!
+=================
+1)Duolingo - 1lesson
+2)1hour - IT
+3)Peppa pig - 5 min - words-repeat
