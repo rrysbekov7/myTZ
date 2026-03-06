@@ -130,3 +130,5 @@
 6.03.2026
 1)Duolingo - 1lesson - DONE!
 2)1hour - IT - DONE!
+3)2hour - IT - DONE!
+4)Python basics - FINISHED!
