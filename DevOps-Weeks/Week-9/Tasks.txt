@@ -1,0 +1,110 @@
+Блок 1 — Типы данных (1–8)
+1)Создай переменную name и сохрани в неё своё имя.
+Выведи строку:Привет, <имя>
+
+name = "Renat"
+print("Привет", name)
+=========================
+2)Создай переменные:
+age
+height
+is_student
+
+Выведи их типы через:type()
+
+age = 10
+height = 139
+is_student = False
+print(type(age))
+print(type(height))
+print(type(is_student))
+==========================
+3)Пользователь вводит число.
+Выведи:
+квадрат числа
+куб числа
+
+num = int(input("Введите число: "))
+print(num**2)
+print(num**3)
+==========================
+4)Создай список из 5 городов.
+Выведи:
+первый город
+последний город
+
+country_lists = ['Bishkek', 'Osh', 'Manas', 'KaraKol', 'Balykchy']
+print(country_lists[0])
+print(country_lists[-1])
+==========================
+5)Добавь новый город в список через:append()
+country_lists = ['Bishkek', 'Osh', 'Manas', 'KaraKol', 'Balykchy']
+country_lists.append('Tokmok')
+print(country_lists)
+
+==========================
+6)Создай словарь:
+name
+age
+city
+
+Выведи значение city.
+
+my_dict = {'name': 'Renat', 'age': 28, 'city': 'Bishkek'}
+print(my_dict['city'])
+
+===========================
+7)Создай список чисел.
+Найди:
+максимальное
+минимальное
+
+num_list = [4, 5, 2, 113, 96, 208, 146, 166, 198, 257, 309]
+
+print(max(num_list))
+print(min(num_list))
+===========================
+8)Преобразуй строку "100" в число.
+  Сложи с числом 50.
+
+
+num = int("100")
+num += 50
+print(num)
+===========================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
