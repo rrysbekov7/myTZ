@@ -136,4 +136,6 @@
 7.03.2026
 1)Duolingo - 1lesson - DONE!
 2)3hours - IT - DONE!
+3)Python tasks - 16tasks - DONE!
+4)Python - work with File - DONE!
 
