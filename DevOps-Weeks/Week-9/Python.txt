@@ -1999,12 +1999,124 @@ bike = [el for el in my_motorbike if len(el) > 3]
 
 print(bike)
 
-221)
+==================================================
+PYTHON - Работа с файловой системой
+в VS CODE создаем 2 файла:
+1)main.py
+2)test.txt
+
+1)
+main.py:
+import os
+print(os.path.exists('test.txt'))
+
+далее запускаем код - Получим True
+
+================
+2)
+import os
+
+print(os.path.isfile('test.txt'))
+
+далее запускаем код - Получим True
+
+================
+3)
+import os
+
+os.rename('test.txt', 'new-test.txt')
+
+далее запускаем код - название файла изменится
+================
+4)
+import os
+
+os.remove('new-test.txt')
+
+далее запускаем код - файл удалится - ОСТОРОЖНО!
+================
+5)
+import os
+
+print(os.getcwd())
+
+далее запускаем код - показывает путь - где мы находимся по директории
+================
+6)
+import os
+
+os.mkdir('new_cat')
+
+далее запускаем код - создает новую директорию в той директории где мы работаем
+================
+7)
+import os
+
+os.mkdir('C:/Users/User/Desktop/My')
+#os.mkdir('C:\\Users\\User\\Desktop\\My') -> alternative
 
 
+далее запускаем код - можем создать папку в указанной директории
+================
+8)
+import os
+
+os.rmdir('new_cat')
+
+далее запускаем код - удаляем папку в директории
+================
+9)
+import os
+import shutil
+
+shutil.rmtree('new_cat')
+
+далее запускаем код - он удаляет папку вместе с его содержимым - точнее если папка не пуста
+=================
+10)
+import os
+
+print(os.listdir('cat'))
+
+далее запускаем код - он покажет что есть внутри папки cat
+=================
+11)
+import os
+
+os.replace('task.txt', 'cat/task.txt')
+
+далее запускаем код - он перемещает файл в указанную директорию - например в cat
+=================
+12)
+import os
+
+os.chdir('cat')
+print(os.listdir('.'))
+
+далее запускаем код - перемещение на другой каталог
+=================
+13)
+f=open("text.txt", "r")
+a=f.read()
+print(a)
+f.close()
+
+в text.txt в той же директории где мы:
+Hello my Dear!
+
+далее запускаем код - увидим содержимое файла text.txt
+=================
+14)
+f=open("text.txt", "w")
+f.write("Can I help you?")
+f.close()
 
 
+далее запускаем код - в файле text.txt текст перезапишется на Can I help you?
+=================
 
+
+Python REQUESTS
 
 
 
