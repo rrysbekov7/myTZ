@@ -1,0 +1,2029 @@
+1)powershell -> python --version
+2)Chrome -> Python downloads -> python 3.14 download
+3)powershell -> python --version
+4)на VS Code -> устанавливаем плагины:Python и Code runner
+5)VS Code -> создаем директорию python и в нем создаем файл main.py
+6)нажимая ctrl + , -> открывается настройка и там сверху справа рядом с кнопкой плэй есть кнопка файл со стрелкой
+нажимаем его - откроется файл json и туда вставим код настройки гитхаба Богдана и сохраняем
+7)кнопка ctrl + b -> это нужно для того чтобы сворачивать дерево папки слева
+8)кнопка ctrl + - -> эо нужно для масштабирования в VS Code
+9)в CMD терминал -> python - это для запуска интерактивной версии интерпретатора Python ->
+там можем запустить след.команды:
+- copyright()
+- license()
+- 2 + 2
+- print(10)
+- exit()
+10)VS Code в main.py пишем: -> print('Renat') -> далее запускаем нажимая плэй(code-runner)
+11)Устанавливаем Pycharm -> там создаем новый проект - python
+12)Pycharm -> там очищаем main.py и пишем там: print("Hello from Pycharm");
+13)Pycharm -> shift + alt + , и shift + alt + . -> это кнопки уменьшения и увеличения масштаба
+14)Основные типы:
+str = "Renat"
+bool = True
+int = 7
+list = [ 1, 2, 3 ]
+dict = { "name" : 'Renat', "age" : 29 }
+15)в CMD звпускаем интерактивную версию Python и там пишем:
+-'Renat'
+-7
+-2 + 2
+-[1, 'abc', true]
+-{'name': 'Renat'}
+16)Встроенные функции:
+-print()
+-inpu()
+-dir()
+-upper()
+17)в VSCODE пишем:
+-print(10, 'Renat', True)
+-print(print)
+-print(dir())
+-print(dir(__builtins__))
+
+18)VS CODE:
+name = input("Input your name: ")
+print(name)
+print(name.capitalize())
+print(name.upper())
+
+и через терминал запускаю -> python main.py
+
+19)VS CODE:
+def my_name(name):
+    print(name)
+my_name('Renat')
+
+20)PEP8 - это документ
+https://peps.python.org/pep-0008/
+
+21)VS Code - comment
+#This is comment
+
+#This
+#is
+#Comment
+
+print('Renat') #This is comment
+
+22)VS CODE:
+def hello():
+    print('Hello There!')
+    
+hello()
+hello()
+
+23)VS CODE:
+def hello():
+    print('Hello There!')
+    
+print("Outside of the Hello function!")
+hello()
+hello()
+
+24)VS CODE:
+def hello(name):
+    print('Hello There!', name)
+    print("HI THERE!", name)
+    
+ 
+hello("Renat")
+
+25)VS CODE:
+def sum_nums(a, b):
+    sum = a + b
+    print(sum)
+    
+sum_nums(10, 5)
+
+26)VS CODE:
+def sum_nums(a, b):
+    sum = a + b
+    return sum
+    
+first = sum_nums(10, 5)
+print(first)
+
+27)VS CODE:
+def sum_nums(a, b):
+    sum = a + b
+    return sum
+    print("This line is not executed!")
+    
+first = sum_nums(10, 5)
+print(first)
+
+28)VS CODE:
+import datetime
+print(datetime.MAXYEAR)
+
+Инструкции:
+1)Объявление переменных
+2)Условные операторы   //THEORY
+3)импорты
+
+29)Имена в Python
+1)snake_case
+2)camelCase         //THEORY
+3)DB_CONSTANT
+4)my-package
+
+30)Правила работы с переменными
+1)Всегда выбирать осмысленные названия
+2)В названиях переменных использовать имя
+существительное, например name, comments, new_photos
+2)Названия функций и методов начинать с глаголов
+например get_data, create_request, merge_name
+
+31)Типы изменяемых объектов
+1)список - list
+2)словари - dict
+3)набор - set
+4)пользовательские классы - user-classes
+
+32)Типы изменяемых объектов
+1)Boolean
+2)Int
+3)str
+4)None
+5)Tuple
+6)Float
+
+33)VSCODE:
+my_name = 'Bogdan'
+print(my_name)
+my_num = 100
+print(my_num)
+print(id(my_num)) ->
+                       //У НИХ ОДНА И ТА ЖЕ ССЫЛКА НА ОБЪЕКТ
+other_num = my_num
+print(id(other_num)) ->
+
+34)VS CODE:
+long_str = "This is a vey long string"
+
+print(long_str)
+print(type(long_str))
+
+35)VS CODE:
+long_str = """This is a 
+vey 
+long 
+string"""
+
+print(long_str)
+print(type(long_str))
+print(id(long_str))
+
+36)VS CODE:
+my_comment = "This is my short comment"
+
+print(len(my_comment))
+
+print(my_comment.replace('short', 'long'))
+
+print(my_comment)
+
+print(my_comment.count('s'))
+
+37)VS CODE
+complex_a = 3 + 7j
+complex_b = 4 + 5j
+print(complex_a + complex_b)
+print(complex_a - complex_b)
+
+38)VS CODE
+db_is_available = False
+
+print(db_is_available)
+print(type(db_is_available))
+
+db_is_available = True
+
+print(db_is_available)
+
+39)VS CODE
+print(bool(10))
+print(bool('abc'))
+print(bool([]))
+print(bool([1,2,3]))
+print(bool(None))
+
+40)VS CODE
+int_num = 5
+float_num = 5
+
+print(int_num + float_num)
+print(float_num + int_num)
+
+bool_val = True
+int_val = 7
+
+print(bool_val + int_val)
+print(int_val + bool_val)
+
+41)VS CODE
+print(bool.__doc__)
+print(str.__doc__)
+
+my_list = []
+print(help(my_list.__eq__))
+
+42)VS CODE
+my_fruits = ['apple', 'banana', 'lime']
+other_fruits = ['banana', 'apple', 'lime']
+print(my_fruits == other_fruits)
+
+
+43)VS CODE
+empty_list = []
+print(len(empty_list))
+
+my_fruits = ['apple', 'banana', 'lime']
+print(len(my_fruits))
+
+posts_ads = [151, 245, 762, 167]
+print(len(posts_ads))
+
+user_inputs = [True, 'hi!', '#', 10.5]
+print(len(user_inputs))
+
+44)VS CODE
+empty_list = []
+print(len(empty_list))
+
+my_fruits = ['apple', 'banana', 'lime']
+print(len(my_fruits))
+
+posts_ads = [151, 245, 762, 167]
+print(len(posts_ads))
+posts_ads[0] = 555
+posts_ads[2] = 333
+print(posts_ads)
+
+user_inputs = [True, 'hi!', '#', 10.5]
+print(len(user_inputs))
+
+45)VS CODE
+user_inputs = [True, 'hi!', '$', 10.5]
+print(len(user_inputs))
+
+del user_inputs[1]
+print(user_inputs)
+print(len(user_inputs))
+
+del user_inputs[-1]
+print(user_inputs)
+print(len(user_inputs))
+
+46)VS CODE
+users = [
+    {
+        'user_id': 134,
+        'user_name': 'Alice'
+    },
+    {
+        'user_id': 831,
+        'user_name': 'Bob'
+    }
+]
+
+print(len(users))
+print(users[1]['user_id'])
+
+47)VS CODE
+my_fruit = 'apple'
+other_fruit = 'banana'
+new_fruit = 'lime'
+
+all_fruits = [my_fruit, other_fruit, new_fruit]
+print(all_fruits)
+
+48)VS CODE ERROR
+posts_ids = [151, 245, 762, 167]
+print(posts_ids[10])
+
+49)VS CODE
+happy_smiles = []
+
+happy_smiles.append(1)
+happy_smiles.append(2)
+happy_smiles.append(3)
+happy_smiles.append(4)
+
+print(happy_smiles)
+
+print(len(happy_smiles))
+
+50)VS CODE
+inputs = [True, 'hi!', '$', 10.5]
+
+inputs.pop()
+print(inputs)
+
+inputs.pop(0)
+print(inputs)
+
+removed_element = inputs.pop()
+print(removed_element)
+
+print(inputs)
+
+51)VS CODE
+posts_ids = [245, 151, 762, 167]
+
+posts_ids.sort()
+
+print(posts_ids)
+
+posts_ids.sort(reverse=True)
+print(posts_ids)
+
+52)VS CODE
+greeting = "Hello from Python"
+greeting_letters = list(greeting)
+
+print(greeting_letters)
+
+my_dict = {'a': 10, 'b': True}
+my_dict_keys = list(my_dict)
+
+print(my_dict_keys)
+
+53)VS CODE
+rattings = [2.5, 5.0, 4.3, 3.7]
+
+print(min(rattings))
+print(max(rattings))
+print(sum(rattings))
+
+print(sum(rattings) / len(rattings))
+
+54)VS CODE
+ratings = [2.5, 5.0, 4.3, 3.7, 4.5]
+
+first_two_ratings = ratings[:2]
+print(first_two_ratings)
+
+middle_ratings = ratings[1:-1]
+print(middle_ratings)
+
+last_two_ratings = ratings[-2:]
+print(last_two_ratings)
+
+
+55)VS CODE
+my_cars = ['BMW', 'Mersedes']
+
+copied_cars = my_cars
+copied_cars.append('Audi')
+
+print(copied_cars)
+
+print(my_cars)
+
+print(id(my_cars) == id(copied_cars))
+
+
+56)VS CODE
+my_cars = ['BMW', 'Mersedes']
+copied_cars = my_cars.copy()
+copied_cars.append('Audi')
+print(copied_cars)
+print(my_cars)
+print(id(my_cars) == id(copied_cars))
+
+57)VS CODE
+my_cars = ['BMW', 'Mersedes']
+copied_cars = list(my_cars)
+copied_cars.append('Audi')
+print(copied_cars)
+print(my_cars)
+print(id(my_cars) == id(copied_cars))
+
+58)VS CODE
+my_nums = [10, 50, 5, 20, 40]
+
+print(dir(my_nums))
+
+59)VS CODE
+my_nums = [10, 50, 5, 5, 20, 40]
+print(my_nums.count(5))
+
+60)VS CODE
+my_nums = [10, 50, 5, 5, 20, 40]
+my_nums.append(35)
+print(my_nums)
+
+61)VS CODE
+my_nums = [10, 50, 5, 5, 20, 40]
+my_nums.insert(2,-5)
+print(my_nums)
+
+62)VS CODE
+my_nums = [10, 50, 5, 5, 20, 40]
+my_nums.clear()
+print(my_nums)
+
+63)VS CODE
+my_nums = [10, 50, 5, 5, 20, 40]
+my_nums.extend('abc')
+print(my_nums)
+
+64)VS CODE
+my_nums = [10, 50, 5, 5, 20, 40]
+other_nums = my_nums.copy()
+#other_nums = my_nums[:]
+#other_nums = list(my_nums)
+
+my_nums.append(3)
+other_nums.clear()
+print(id(my_nums))
+print(id(other_nums))
+print(my_nums, other_nums)
+
+65)VS CODE
+my_motorbike = {
+    'brand': 'Ducati',
+    'price': 25000,
+    'engine_vol': 1.2
+}
+
+other_motorbike = {
+    'price': 25000,
+    'engine_vol': 1.2,
+    'brand': 'Ducati'
+}
+
+print(my_motorbike == other_motorbike)
+
+66)VS CODE
+my_motorbike = {
+    'brand': 'Ducati',
+    'price': 25000,
+    'engine_vol': 1.2
+}
+
+print(my_motorbike['brand'])
+print(my_motorbike['price'])
+
+67)VS CODE
+my_motorbike = {
+    'brand': 'Ducati',
+    'price': 25000,
+    'engine_vol': 1.2
+}
+
+print(my_motorbike)
+my_motorbike['price'] = 250000
+print(my_motorbike)
+
+68)VS CODE
+my_motorbike = {
+    'brand': 'Ducati',
+    'price': 25000,
+    'engine_vol': 1.2
+}
+
+print(my_motorbike)
+my_motorbike['is_new'] = True
+print(my_motorbike)
+
+
+
+69)VS CODE
+my_motorbike = {
+    'brand': 'Ducati',
+    'price': 25000,
+    'engine_vol': 1.2
+}
+
+print(my_motorbike)
+del my_motorbike['engine_vol']
+print(my_motorbike)
+
+70)VS CODE
+my_motorbike = {
+    'brand': 'Ducati',
+    'price': 25000,
+    'engine_vol': 1.2
+}
+
+key_name = 'brand'
+my_motorbike[key_name] = 'BMW'
+print(my_motorbike)
+
+71)VS CODE
+my_motorbike = {
+    'brand': 'Ducati',
+    'price': 25000,
+    'engine_vol': 1.2,
+    'price_info': {
+        'price2': 7000,
+        'is_available': True
+    }
+}
+
+print(my_motorbike['price_info']['price2'])
+print(my_motorbike['price_info']['is_available'])
+
+72)VS CODE
+brand = 'Ducati'
+bike_price = 25000
+engine_volume = 1.2
+
+my_motorbike = {
+    'brand': brand,
+    'price': bike_price,
+    'engine_vol': engine_volume,
+}
+
+print(my_motorbike)
+
+73)VS CODE
+brand = 'Ducati'
+bike_price = 25000
+engine_volume = 1.2
+
+my_motorbike = {
+    'brand': brand,
+    'price': bike_price,
+    'engine_vol': engine_volume,
+}
+
+print(len(my_motorbike))
+del my_motorbike['price']
+print(len(my_motorbike))
+
+74)VS CODE
+brand = 'Ducati'
+bike_price = 25000
+engine_volume = 1.2
+
+my_motorbike = {
+    'brand': brand,
+    'price': bike_price,
+    'engine_vol': engine_volume,
+}
+
+print(my_motorbike.get('model'))
+
+75)VS CODE
+my_motorbike = {
+    'brand': 'Ducati',
+    'price': 25000,
+    'engine_vol': 1.2
+}
+
+print(my_motorbike.get('brand'))
+print(my_motorbike.get('price'))
+print(my_motorbike.get('qty', 0))
+
+76)VS CODE
+my_dict = {}
+print(my_dict.__doc__)
+
+77)VSCODE
+my_disk = {}
+
+print(id(my_disk))
+print(type(my_disk))
+
+my_disk['price'] = 80
+my_disk['brand'] = 'Samsung'
+
+print(my_disk)
+print(my_disk.items())
+print(list(my_disk.keys()))
+
+print(my_disk.popitem())
+print(my_disk)
+
+78)VS CODE
+my_disk = {}
+
+print(id(my_disk))
+print(type(my_disk))
+
+my_disk['price'] = 80
+my_disk['brand'] = 'Samsung'
+
+new_disk = my_disk.copy()
+new_disk['type'] = 'ssd'
+print(my_disk)
+print(new_disk)
+
+79)VSCODE
+my_disk = {}
+
+print(id(my_disk))
+print(type(my_disk))
+
+my_disk['price'] = 80
+my_disk['brand'] = 'Samsung'
+
+new_disk = my_disk.copy()
+new_disk['type'] = 'ssd'
+print(my_disk)
+print(new_disk)
+print(id(my_disk))
+print(id(new_disk))
+print(len(my_disk))
+
+80)VS CODE
+#my_list = [['first', 0], ['second', True]]
+my_list = [('first', 0), ['second', True]]
+my_dict = dict(my_list)
+
+print(my_dict)
+
+81)VS CODE
+my_dict = {}
+
+key_1 = input("Please enter key 1: ")
+value_1 = input("Please enter value 1: ")
+
+my_dict[key_1] = value_1
+
+key_2 = input("Please enter key 2: ")
+value_2 = input("Please enter value 2: ")
+
+my_dict[key_2] = value_2
+
+key_3 = input("Please enter key 3: ")
+value_3 = input("Please enter value 3: ")
+
+my_dict[key_3] = value_3
+
+print(my_dict)
+
+82)VS CODE
+my_fruits = ('apple', 'banana', 'lime')
+other_fruits = ('banana', 'apple', 'lime')
+
+print(my_fruits == other_fruits)
+
+83)VS CODE
+my_fruits = ('apple', 'banana', 'lime')
+print(len(my_fruits))
+
+posts_ids = (151, 245, 762, 167)
+print(len(posts_ids))
+
+user_inputs = (True, 'hi', '$', 10.5)
+print(len(user_inputs))
+
+84)VS CODE
+posts_ids = (151, 245, 762, 167)
+print(posts_ids[0])
+print(posts_ids[1])
+print(posts_ids[-1])
+
+85)VS CODE
+posts_ids = (151, 245, 762, 167)
+print(type(posts_ids))
+posts_ids[1] = 700
+
+86)VS CODE - ERROR
+НЕЛЬЗЯ УДАЛЯТЬ ЭЛЕМЕНТ ИЗ КОРТЕЖА
+user_inputs = (True, 'hi!','$')
+print(len(user_inputs))
+
+del user_inputs[1]
+
+
+87)VS CODE
+users = (
+    {
+        'user_id': 134,
+        'user_name': 'Alice'
+    },
+    {
+        'user_id': 831,
+        'user_name': 'Bob'
+    }
+)
+
+print(users[1]['user_id'])
+users[1]['user_id'] = 100
+print(users[1]['user_id'])
+
+
+88)VSCODE
+my_fruit = 'apple'
+other_fruit = 'banana'
+new_fruit = 'lime'
+
+all_fruits = (my_fruit, other_fruit, new_fruit)
+print(all_fruits)
+
+89)VSCODE
+internal_ids = (151, 245)
+external_ids = (624, 451, 941)
+
+all_ids = internal_ids + external_ids
+print(all_ids)
+
+90)VS CODE
+posts_ids = (151, 245, 762, 245)
+print(posts_ids.count(245))
+print(posts_ids.count(151))
+
+91)VS CODE
+posts_ids = (151, 245, 762, 245)
+print(posts_ids.index(245))
+print(posts_ids.index(762))
+
+92)VS CODE
+posts_ids = (151, 245)
+
+posts_ids_list = list(posts_ids)
+posts_ids_list.append(351)
+
+print(posts_ids_list)
+
+posts_ids_tuple = tuple(posts_ids_list)
+
+print(posts_ids_tuple)
+
+93)VS CODE
+my_nums = (10, 5, 100, 0, 5, 5)
+print(my_nums.index(5))
+index_one = my_nums.index(5)
+index_two = my_nums.index(5, index_one + 1)
+print(index_two)
+
+94)VS CODE
+my_nums = (10, 5, 100, 0, 5, 5)
+my_list = list(my_nums)
+my_list.append(7)
+print(my_list)
+print(my_nums)
+my_nums = tuple(my_list)
+print(my_nums)
+
+95)VS CODE
+my_touple = tuple('abcd')
+print(my_touple)
+
+my_second_touple = tuple({'first': 1, 'second': True})
+print(my_second_touple)
+
+96)VS CODE
+posts_ids = {151, 245, 167, 167, 151}
+print(posts_ids)
+print(type(posts_ids))
+
+97)VS CODE
+my_fruits = {'apple', 'banana', 'lime'}
+other_fruits = {'banana', 'apple', 'lime'}
+
+print(my_fruits == other_fruits)
+
+98)VS CODE
+my_fruits = {'apple', 'banana', 'lime'}
+print(len(my_fruits))
+
+posts_ids = {151, 245, 762, 167}
+print(len(posts_ids))
+
+99)VS CODE ERROR!
+у наборов нет индекса
+
+posts_ids = {151, 245, 762, 167}
+print(posts_ids[0])
+
+
+100)VS CODE ERROR
+lists_get = {[1, 2], [20, 5]}
+print(lists_get)
+
+101)VS CODE ERROR
+photo_dimensions = {'1920x1080', '800x600'}
+print(len(photo_dimensions))
+
+del photo_dimensions[1]
+
+102)VS CODE
+my_set = {10, 10, 5, 15, 15}
+
+print(my_set)
+print(len(my_set))
+
+
+103)VS CODE
+my_set = {(10, 10), 5, 15, 15}
+
+print(my_set)
+print(len(my_set))
+
+104)VS CODE
+my_set = set()
+
+print(my_set)
+print(type(my_set))
+
+105)VS CODE
+photo_sizes = {'1920x1080', '800x600'}
+photo_sizes.add('1024x768')
+
+print(photo_sizes)
+
+106)VS CODE
+photo_sizes = {'1920x1080', '800x600'}
+other_sizes = {'800x600', '1024x768'}
+
+all_sizes = photo_sizes.union(other_sizes)
+
+print(all_sizes)
+
+107)VS CODE
+photo_sizes = {'1920x1080', '800x600'}
+other_sizes = {'800x600', '1024x768'}
+
+all_sizes = photo_sizes.intersection(other_sizes)
+
+print(all_sizes)
+
+108)VS CODE
+nums = {10, 5, 35}
+other_nums = {20, 5, 12, 10, 35}
+
+res = nums.issubset(other_nums)
+print(res)
+
+109)VS CODE
+my_set = {'abc', 'd', 'f', 'y'}
+other_set = {'a', 'f', 'd'}
+
+print(my_set.intersection(other_set))
+print(my_set.intersection('abcd'))
+print(my_set.union(other_set))
+print(other_set.issubset(my_set))
+
+110)VS CODE
+my_set = {'a', 'd', 'f'}
+other_set = {'a', 'f', 'd'}
+
+print(other_set.issubset(my_set))
+
+
+111)VS CODE
+my_set = {'abc', 'd', 'f', 'y'}
+other_set = {'a', 'f', 'd'}
+
+
+print(my_set.difference(other_set))
+print(my_set | other_set)
+print(my_set & other_set)
+
+112)VS CODE
+my_set = {'abc', 'd', 'f', 'y'}
+other_set = {'a', 'f', 'd'}
+
+
+print(my_set.discard('d'))
+print(my_set)
+
+113)VS CODE
+my_set = {'abc', 'd', 'f', 'y'}
+other_set = {'a', 'f', 'd'}
+
+
+print(my_set.remove('d'))
+print(my_set)
+
+114)VS CODE
+my_set = {'abc', 'd', 'f', 'y'}
+
+copied_set = my_set.copy()
+
+my_set.add('t')
+copied_set.add('l')
+
+print(my_set)
+print(copied_set)
+
+115)VS CODE
+my_set = {'abc', 'd', 'f', 'y'}
+
+copied_set = my_set.copy()
+
+my_set.add('t')
+copied_set.add('l')
+
+print(my_set.symmetric_difference(copied_set))
+
+116)VS CODE
+my_range = range(7)
+
+print(type(my_range))
+
+print(my_range)
+
+print(list(my_range))
+
+
+117)VS CODE
+my_range = (10, 20, 3)
+print(type(my_range))
+
+print(my_range)
+
+print(list(my_range))
+
+118)VS CODE
+my_range = (10, 20, 3)
+print(my_range[0])
+print(my_range[1])
+print(my_range[2])
+print(my_range[3])
+print(my_range[4]) - #error!
+
+119)VS CODE
+my_range = range(5)
+
+print(my_range)
+print(type(my_range))
+print(my_range[0])
+
+
+120)VS CODE
+my_range = range(5)
+
+for n in my_range:
+    print(n)
+    
+print(my_range[0])
+
+121)VS CODE
+for n in range(5):
+    print(n)
+
+122)VS CODE
+for n in range(2, 8):
+    print(n)
+
+123)VS CODE
+my_range = range(5)
+print(dir(my_range))
+
+124)VS CODE
+my_range = range(5)
+print(my_range.start)
+print(my_range.stop)
+
+
+125)VS CODE
+my_range = range(10, 30, 3)
+print(my_range.start)
+print(my_range.stop)
+print(my_range.step)
+
+126)VS CODE
+my_range = range(10, 30, 3)
+print(my_range.index(25))
+
+127)VS CODE
+my_range = range(10, 30, 3)
+print(my_range.count(11))
+
+128)VS CODE
+fruits = ['apple', 'banana', 'lime']
+
+quantities = [100, 70, 50]
+
+fruit_qtys_zip = zip(fruits, quantities)
+
+print(fruit_qtys_zip)
+
+fruit_qtys_list = list(fruit_qtys_zip)
+
+print(fruit_qtys_list)
+
+129)VS CODE
+fruits = ['apple', 'banana', 'lime']
+
+quantities = [100, 70, 50]
+
+availability = [True, False, False]
+
+fruit_qtys_zip = zip(fruits, quantities, availability)
+
+print(fruit_qtys_zip)
+
+fruit_qtys_list = list(fruit_qtys_zip)
+
+print(fruit_qtys_list)
+
+130)VS CODE
+fruits = ['apple', 'banana', 'lime']
+quantities = [100, 70, 50]
+
+fruit_qtys_zip = zip(fruits, quantities)
+print(fruit_qtys_zip)
+
+fruit_qtys_dict = dict(fruit_qtys_zip)
+print(fruit_qtys_dict)
+
+131)VS CODE
+first_num = 10
+second_num = first_num
+
+print(id(first_num))
+print(id(second_num))
+
+second_num += 5
+print(second_num)
+print(first_num)
+
+print(id(second_num))
+print(id(first_num))
+
+132)VS CODE
+my_list = [1, 2, 3]
+print(id(my_list))
+
+other_list = [1, 2, 3]
+print(id(other_list))
+
+print(id([1, 2, 3]))
+
+133)VS CODE
+info = {
+    'name': 'Bogdan',
+    'is_instructor': True
+}
+
+info_copy = info 
+info['reviews_qty'] = 5
+
+print(info['reviews_qty'])
+print(info_copy['reviews_qty'])
+
+134)VS CODE
+info = {
+    'name': 'Bogdan',
+    'is_instructor': True,
+    'reviews': []
+}
+
+info_copy = info.copy()
+info_copy['reviews'].append('Great course!')
+
+print(info)
+
+print(info_copy)
+
+135)VS CODE
+from copy import deepcopy
+
+info = {
+    'name': 'Bogdan',
+    'is_instructor': True,
+    'reviews': []
+}
+
+info_deepcopy = deepcopy(info)
+info_deepcopy['reviews'].append('Great course!')
+
+print(info)
+
+print(info_deepcopy)
+
+
+136)VS CODE
+def my_fn(a, b):
+    a = a + 1
+    c = a + b
+    return c
+
+res = my_fn(10, 3)
+print(res)
+
+137)VS CODE
+def my_fn():
+    pass
+
+print(my_fn())
+
+138)VS CODE
+def my_fn(a, b):
+    a = a + 1
+    c = a + b
+    return c
+
+num_one = 10
+num_two = 5
+
+res = my_fn(num_one, num_two)
+print(res)
+print(num_one)
+
+139)VS CODE
+def increase_person_age(person):
+    person['age'] += 1
+    return person
+
+person_one = {
+    'name': 'Bob',
+    'age': 21
+}
+
+increase_person_age(person_one)
+print(person_one['age'])
+
+140)VS CODE
+def increase_person_age(person):
+   person_copy = person.copy()
+   person_copy['age'] += 1
+   return person_copy
+
+person_one = {
+    'name': 'Bob',
+    'age': 21
+}
+
+new_person = increase_person_age(person_one)
+print(new_person['age'])
+print(person_one['age'])
+
+141)VS CODE
+def merge_lists_to_dict(list_one, list_two):
+    zipped_seq = zip(list_one, list_two)
+    return dict(zipped_seq)
+
+res_one = merge_lists_to_dict(['a', 'b', 'c'], [10, True, []])
+print(res_one)
+
+142)VS CODE
+def merge_lists_to_dict(list_one, list_two):
+    zipped_seq = zip(list_one, list_two)
+    return dict(zipped_seq)
+
+res_one = merge_lists_to_dict(['a', 'b', 'c'], [10, True, []])
+print(res_one)
+
+res_two = merge_lists_to_dict(['abc'], [{}, True, 100])
+print(res_two)
+
+res_three = merge_lists_to_dict(['a', True, 100], ['abc'])
+print(res_three)
+
+
+143)VS CODE
+def sum_nums(*args):
+    print(args)
+    print(type(args))
+    
+    print(args[0])
+    return sum(args)
+
+print(sum_nums(2, 3, 7))
+
+
+144)VS CODE
+def get_posts_info(name, posts_qty):
+    info = f"{name} wrote {posts_qty} posts"
+    return info
+
+info = get_posts_info('Bogdan', 25)
+print(info)
+
+
+145)VS CODE
+def get_posts_info(name, posts_qty):
+    info = f"{name} wrote {posts_qty} posts"
+    return info
+
+info = get_posts_info(name='Bogdan', posts_qty=25)
+print(info)
+
+
+146)VS CODE
+def get_posts_info(**person):
+    print(person)
+    print(type(person))
+    info = (
+        f"{person['name']} wrote"
+        f"{person['posts_qty']} posts"
+    )
+    
+    return info
+
+info = get_posts_info(name='Bogdan', posts_qty=25)
+print(info)
+
+
+147)VS CODE Error
+def update_car_info(**car):
+    car['is_available'] = True
+    return car
+
+print(update_car_info(brand="BMW", price=100000))
+
+#TypeError: update_car_info() takes 0 positional arguments but 2 were given
+print(update_car_info('BMW', 100000))
+
+148)VS CODE
+def mult_by_factor(value, multiplier=1):
+    return value * multiplier
+
+print(mult_by_factor(10, 2))
+print(mult_by_factor(5))
+
+149)VS CODE
+from datetime import date
+
+def get_weekday():
+    return date.today().strftime('%A')
+
+def create_new_post(post, weekday=get_weekday()):
+    post_copy = post.copy()
+    post_copy['created_on_weekday'] = weekday
+    return post_copy
+
+initial_post = {
+    'id': 243,
+    'author': 'Bogdan'
+}
+
+post_with_weekday = create_new_post(initial_post)
+
+print(post_with_weekday)
+
+
+150)VS CODE
+def other_fn():
+    pass
+
+def fn_with_callback(callback_fn):
+    callback_fn()
+    
+fn_with_callback(other_fn)
+
+151)VS CODE
+def print_number_info(num):
+    if (num % 2) == 0:
+        print("Entered number is even")
+    else:
+        print("Entered number is odd")
+
+
+def process_number(num, callback_fn):
+    callback_fn(num)
+    
+entered_num = int(input("Enter any number: "))
+process_number(entered_num, print_number_info)
+
+
+152)VS CODE
+def send_data(data):
+    pass
+
+def process_data(input_data, send_data_fn):
+    updated_data = input_data.copy()
+    send_data_fn(updated_data)
+    
+process_data({'name': 'Bogdan'}, send_data)
+
+
+153)VS CODE - DOCSTRING
+def mult_by_factor(value, mult=1):
+    """Multiplies number by multiplicator"""
+    return value * mult 
+
+mult_by_factor(5)
+
+154)Install plugin autodocstring -> """""" + Tab in VS CODE
+
+def mult_by_factor(value, mult=1):
+    #Here-> """_summary_
+
+    Args:
+        value (_type_): _description_
+        mult (int, optional): _description_. Defaults to 1.
+
+    Returns:
+        _type_: _description_
+    """
+    return value * mult 
+
+mult_by_factor(5)
+
+
+155)VS CODE
+a = 10
+
+def my_fn():
+    a = True
+    b = 15
+    print(a)
+    print(b)
+
+my_fn()
+
+print(a)
+print(b) - Error
+
+
+156)VS CODE
+a = 5
+
+def my_fn():
+    def inner_fn():
+        print(a)
+    inner_fn()
+    
+my_fn()
+
+157)VS CODE
+def my_fn():
+    global a
+    a = 10
+    
+my_fn()
+
+print(a)
+
+158)VS CODE
+c = 5
+
+def my_fn(a, b):
+    d = 10
+    print(c)
+    print(a, b)
+    print(dir())
+    
+my_fn(3, 5)
+
+159)VS CODE
+a = 10
+b = a
+
+c = a + b 
+
+print(a is b)
+print(c is b)
+
+160)VS CODE
+a = [1, 2]
+b = [1, 2]
+
+print(a == b)
+print(a.__eq__(b))
+print(a.__eq__)
+
+print(id(a) == id(b))
+print(id(a))
+print(hex(id(a)))
+
+161)VS CODE
+my_num = 10
+print(+my_num)
+
+my_bool = True
+print(+my_bool)
+
+162)VS CODE
+my_num = 10
+print(not my_num)
+
+163)VS CODE
+my_car = {
+    'brand': 'Toyota',
+    'price': 10_000
+}
+
+print('brand' in my_car)
+print('year' in my_car)
+print('year' not in my_car)
+
+164)VS CODE
+my_list = [1, 2]
+
+if len(my_list) > 0:
+    print("List has elements")
+
+
+165)VS CODE
+button = {
+    'width': 200,
+    'text': 'Buy'
+}
+
+red_button = {
+    **button,
+    'color': 'red'
+}
+
+print(red_button)
+
+print(button)
+
+
+166)VS CODE
+grey_button = {
+    'width': 200,
+    'text': 'Buy',
+    'color': 'grey'
+}
+
+red_button = {
+    **grey_button,
+    'color': 'red'
+}
+
+print(red_button)
+
+print(grey_button)
+
+
+167)VS CODE
+button_info = {
+    'text': 'Buy'
+}
+
+button_style = {
+    'color': 'yellow',
+    'width': 200,
+    'height': 300
+}
+
+button = {
+    **button_info,
+    **button_style
+}
+
+print(button)
+
+
+168)VS CODE
+button_info = {
+    'text': 'Buy'
+}
+
+button_style = {
+    'color': 'yellow',
+    'width': 200,
+    'height': 300
+}
+
+button = button_info | button_style
+
+print(button)
+
+169)VS CODE
+button_info = {
+    'text': 'Buy',
+    'color': 'black',
+    'width': 0,
+    'height': 0
+}
+
+button_style = {
+    'color': 'yellow',
+    'width': 200,
+    'height': 300
+}
+
+button = button_info | button_style
+
+print(button)
+
+170)VS CODE
+my_dict = {'a': True, 'b': 10}
+del my_dict['a']
+
+my_dict.__delitem__('b')
+print(my_dict)
+print(my_dict.__delitem__)
+
+
+171)VS CODE
+my_list = [1, 2]
+
+del my_list[0]
+
+my_list.__delitem__(0)
+
+print(my_list)
+
+
+172)VS CODE
+hello = 'Hello'
+world = 'World'
+
+greeting = hello + ' ' + world
+print(greeting)
+
+
+173)VS CODE
+hello = 'Hello'
+world = 'World'
+
+greeting = f"{hello} {world}"
+print(greeting)
+
+
+174)VS CODE
+hello = 'Hello'
+world = 'World'
+num = '0\'clock'
+greeting = f"{hello} {world}"
+print(greeting)
+
+
+175)VS CODE
+mult = lambda a, b: a * b
+print(mult(10, 5))
+
+176)VS CODE
+def greeting(greet):
+    return lambda name: f"{greet}, {name}"
+
+morning_greeting = greeting("Good Morning")
+
+print(morning_greeting('Bogdan'))
+
+evening_greeting = greeting("Good Evening")
+
+print(evening_greeting('Bogdan'))
+
+
+177)VS CODE
+try:
+    print(10 / 0)
+except ZeroDivisionError:
+    print("Error - Division by zero!")
+    
+print('Continue...')
+
+
+178)VS CODE
+try:
+    print(10 / 0)
+except ZeroDivisionError as e:
+    print(type(e))
+    print(e)
+    
+print('Continue...')
+
+
+179)VS CODE
+try:
+    print('10' / 0)
+except ZeroDivisionError as e:
+    print(e)
+except TypeError as e:
+    print(type(e))
+    print(e)
+    
+print('Continue...')
+
+180)VS CODE
+try:
+    print(10 / 5)
+except ZeroDivisionError as e:
+    print(e)
+except TypeError as e:
+    print(type(e))
+    print(e)
+else:
+    print("There was no error!")
+finally:
+    print('Continue...')
+
+
+181)VS CODE
+try:
+    print(10 / 0)
+except Exception as e:
+    print(e)
+
+
+182)VS CODE
+def divide_nums(a, b):
+    if b == 0:
+        raise TypeError("Second argument can't be 0")
+    return a / b
+
+try:
+    divide_nums(10, 0)
+except ZeroDivisionError as e:
+    print(e)
+except TypeError as e:
+    print(e)
+    
+print('Continue...')
+
+
+183)VS CODE
+def divide_nums(a, b):
+    if b == 0:
+        raise TypeError("Second argument can't be 0")
+    return a / b
+
+try:
+    divide_nums(10, 0)
+except TypeError as e:
+    print(e)
+    
+print('Continue...')
+
+
+
+184)VS CODE
+my_fruits = ['apple', 'banana', 'lime']
+
+my_apple, my_banana, my_lime = my_fruits
+
+print(my_apple)
+print(my_banana)
+print(my_lime)
+
+
+185)VS CODE
+my_list = [1, 2, 3]
+
+first, second, third = my_list
+
+print(first)
+print(second)
+print(third)
+
+
+186)VS CODE
+my_fruits = ('apple', 'banana', 'lime')
+print(type(my_fruits))
+
+my_apple, my_banana, my_lime = my_fruits
+
+print(my_apple)
+print(my_banana)
+print(my_lime)
+
+
+
+187)VS CODE
+my_fruits = ['apple', 'banana', 'lime']
+
+my_apple, *remainig_fruits = my_fruits
+
+print(my_apple)
+print(remainig_fruits)
+
+print(type(remainig_fruits))
+
+
+188)VS CODE
+def user_info(name, comments_qty=0):
+    if not comments_qty:
+        return f"{name} has no comments"
+    return f"{name} has {comments_qty} comments"
+
+print(user_info(**user_profile))
+
+
+189)VS CODE
+user_data = ['Bogdan', 23]
+
+def user_info(name, comments_qty):
+    if not comments_qty:
+        return f"{name} has no comments"
+    return f"{name} has {comments_qty} comments"
+
+print(user_info(*user_data))
+
+
+190)VS CODE
+user_data = ['Bogdan', 23]
+
+def user_info(name, comments_qty):
+    if not comments_qty:
+        return f"{name} has no comments"
+    return f"{name} has {comments_qty} comments"
+
+my_name, my_comments_qty = user_data
+print(user_info(my_name, my_comments_qty))
+
+
+
+191)VS CODE
+person_info = {
+    'age': 20
+}
+
+if not person_info.get('name'):
+    print('Имя отсутствует')
+
+
+192)VS CODE
+num_one = 10
+num_two = 5
+
+if (num_one > 0 and
+    num_two > 0 and
+    isinstance(num_one, int)and
+    isinstance(num_two, int)):
+    print("Both numbers are this and positive")
+
+
+193)VS CODE
+num_one = 10
+num_two = 5
+
+if (num_one > 0 and
+    num_two > 0 and
+    isinstance(num_one, int)and
+    isinstance(num_two, int)):
+    print("Both numbers are this and positive")
+
+
+194)VS CODE
+my_number = -10
+
+if my_number > 0:
+    print(my_number, "is positive number")
+elif my_number < 0:
+    print(my_number, "is negative number")
+else:
+    print(my_number, "is zero")
+    
+
+195)VS CODE
+def nums_info(a,b):
+    if (type(a) is not int) or (type(b) is not int):
+        return "Один из аргументов нецелое число"
+    if a >= b:
+        return f"{a} больше или равно {b}"
+    return f"{a} меньше {b}"
+
+print(nums_info(True, 10))
+
+print(nums_info(10, 2))
+print(nums_info(4, 15))
+
+
+196)VS CODE
+my_number = 21.5
+
+print("is int") if type(my_number) is int else print("is not int")
+#ITS ALSO LIKE
+if type(my_number) is int:
+    print("is int")
+else:
+    print("is not int")
+
+
+197)VS CODE
+my_img = ('1920', '1080', True)
+
+print(f"{my_img[0]}x{my_img[1]}") if \
+len(my_img) == 2 else print("Incorrect image formatting")
+
+
+198)VS CODE
+my_list = [True, 10, 'abc', {}]
+for elem in my_list:
+    print(elem)
+
+
+199)VS CODE
+my_object = {
+    'x': 10,
+    'y': True,
+    'z': 'abc'
+}
+
+for key in my_object:
+    print(key, my_object[key])
+
+
+200)VS CODE
+for el in [1, 'abc', True, {}]:
+    print(type(el))
+    print(el)
+
+201)VS CODE
+my_dict = {'id': 324, 'title': 'test'}
+
+for key in my_dict:
+    print(type(key))
+    print(key)
+    print(my_dict[key]) 
+
+
+202)VS CODE
+my_object = {
+    'x': 10,
+    'y': True
+}
+
+for item in my_object.items():
+    key, value = item
+    print(key, value)
+    
+
+203)VS CODE
+video_ids = {1435, 4317, 2761, 5721}
+
+for id in video_ids:
+    print(id)     
+
+
+204)VS CODE
+my_name = 'Bogdan'
+
+for char in my_name:
+    print(char)
+
+
+205)VS CODE
+for num in range(5):
+    print(num)
+
+
+206)VSCODE
+for odd_num in range(3, 10, 2):
+    print(odd_num)
+
+
+207)VS CODE
+def dict_to_list(dict_to_convert):
+    for k, v in dict_to_convert.items():
+        print(k, v)
+
+print(dict_to_list({'a': True, 'b': []}))
+
+
+208)VS CODE
+def filter_list(list_to_filter, value_type):
+    def check_element_type(elem):
+        return isinstance(elem, value_type)
+    return list(filter(check_element_type, list_to_filter))
+
+res = filter_list([1, 10, 'abc', 5.5], int)
+print(res)
+
+
+209)VS CODE
+while True:
+    answer = input("Enter yes or no: ")
+    if answer == 'no':
+        break
+
+210)VS CODE
+import random
+
+random_num = random.randint(1,5)
+while True:
+    num = int(input("Guess the number from 1 to 5: "))
+    if num != random_num:
+        print("Try again...")
+        continue
+    print("Congratulations!", random_num)
+    break
+
+
+211)VS CODE
+while True:
+    try:
+        num_one = float(input("Please enter number one: "))
+        num_two = float(input("Please enter number two: "))
+    except ValueError as e:
+        print(e)
+        print("You must enter numbers!")
+        continue
+    
+    print(num_one / num_two)
+    
+    answer = input("Do you want to continue? (yes/no): ")
+    if answer == 'no':
+        break
+
+
+212)VS CODE
+all_nums = [-3, 1, 0, 10, -20, 5]
+
+absolute_nums = []
+
+for num in all_nums:
+    absolute_nums.append(abs(num))
+print(absolute_nums)
+
+print(all_nums)
+
+
+213)VS CODE
+all_nums = [-3, 1, 0, 10, -20, 5]
+
+positive_nums = []
+for num in all_nums:
+    if num > 0:
+        positive_nums.append(num)
+
+print(positive_nums)
+print(all_nums)
+
+
+214)VS CODE
+all_nums = [-3, 1, 0, 10, -20, 5]
+
+positive_nums = [num for num in all_nums if num > 0]
+
+print(positive_nums)
+print(all_nums)
+
+
+215)VS CODE
+my_set = {1, 10, 15}
+
+new_set = set()
+
+for val in my_set:
+    new_set.add(val * val)
+print(new_set)
+
+print(my_set)
+
+
+216)VS CODE
+my_set = {1, 10, 15}
+new_set = {val * val for val in my_set}
+print(new_set)
+print(my_set)
+
+
+217)VS CODE
+my_scores = {
+    'a': 10,
+    'b': 7,
+    'm': 14
+}
+
+scores = {}
+
+for key, value in my_scores.items():
+   scores[key] = value * 10
+   
+print(scores)
+
+print(my_scores) 
+
+
+218)VS CODE
+my_scores = {
+    'a': 10,
+    'b': 7,
+    'm': 14
+}
+
+scores = {k: v * 10 for k, v in my_scores.items()}
+
+print(scores)
+print(my_scores) 
+
+
+219)VS CODE
+my_scores = [10, 7, 14]
+
+scores = {k: v for k, v in enumerate(my_scores)}
+
+print(scores)
+
+220)VS CODE
+my_motorbike = ['BMW', 'Germany', 'Bogdan']
+
+bike = [el for el in my_motorbike if len(el) > 3]
+
+print(bike)
+
+221)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
