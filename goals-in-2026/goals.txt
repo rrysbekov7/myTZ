@@ -7,3 +7,16 @@ Plans for 2026
 4)Visit the Turkey
 5)Visit the Tashkent
 
+25.11.2025 - 07.03.2026
+1)Finished Python basics - 16hours
+2)Bash scripts - 11movies
+3)Docker - 3 hours
+4)Github - 4hours
+5)Peppa Pig - 1hours
+6)200 new words in English
+7)2Books
+8)Duolingo - 433days
+9)9Weeks in DevOps programm
+10)Linux practice - continue
+
+
