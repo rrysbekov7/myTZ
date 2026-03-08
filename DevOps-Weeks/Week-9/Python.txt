@@ -2117,9 +2117,57 @@ f.close()
 
 
 Python REQUESTS
+1)Открываем Powershell -> python -m pip install requests(python -m так как напрямую pip не запустилась - нужно настроить его)
+main.py:
+1)
+import requests
+
+response = requests.get('https://www.google.com/')
+print(response.status_code) 
+
+далее запускаем код - и видим статус сайта - 200
+================================
+2)
+import requests
+
+response = requests.get('https://www.google.com/')
+print(response.status_code) -> статус сайта
+print(response.headers) ->Служебная информация
+print(response.content) -> HTML Content
+
+===============================
+3)
+import requests
+
+response = requests.get('https://www.google.com/')
+# print(response.status_code)
+# print(response.headers)
+# print(response.content)
+print(response.text) ->in HTML - more understandable
+
+===============================
+4)
+import requests
+
+params = {"q" : "funny cats"}
+
+response = requests.get('https://www.google.com/search', params=params)
+
+print(response.text)
 
 
+далее запускаем код - получаем html код этой страницы-его можем сохранить у себя в другом файле
+и запустить
+===============================
+5)
+а)Переходим на страницу - https://home.openweathermap.org/api_keys
+б)Там регаемся
+в)заходим во вкладку my_api_keys
 
+d061ce27096266c5507f70dd3e46f127 - my key
+
+https://old.openweathermap.org/api
+https://old.openweathermap.org/current
 
 
 
