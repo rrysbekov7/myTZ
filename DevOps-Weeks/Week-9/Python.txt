@@ -2304,11 +2304,31 @@ print(response)
 print(response.text)
 
 ============================================
+9)
+lesson1.py:
+import requests
+from requests.auth import HTTPBasicAuth
+
+response = requests.get(
+    url="https://petstore.swagger.io/v2/store/inventory",
+    # auth=HTTPBasicAuth("username")
+    headers={
+        "api_key": "special-key"},
+    # params={},
+    # verify=False
+)
+
+print(response.json())
+print(response.status_code)
+print(response.json()["sold"])
 
 
 
+также https://petstore.swagger.io/#/store/getInventory -> store -> get ->
+и на самом вверху есть url https://petstore.swagger.io/v2/swagger.json ->
+https://petstore.swagger.io/v2/
 
-
+================================================
 
 
 

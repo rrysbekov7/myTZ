@@ -51,5 +51,7 @@
 1)Duolingo - 1lesson - DONE!
 2)1hour - IT - DONE!
 3)Python - requests - continue - DONE!
+4)1hour - IT - DONE!
+5)1hour - IT - DONE!
 =================
 

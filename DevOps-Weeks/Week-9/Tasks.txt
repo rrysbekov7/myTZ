@@ -153,63 +153,42 @@ def greet(name):
 greet('Renat')
 ===========================
 17)
+lesson1.py:
+import requests
+
+response = requests.get("https://facebook.com")
+print(response)
+print(response.text)
+
+============================
+1)
+https://www.pexels.com/ -> registration -> get started ->
+https://www.pexels.com/ru-ru/api/key/ ->
+api-key: bunBW0IChmP7S0VR6rj1qtQU4qnAS1itr9zdQwnDKI2kmFkAoKYAUeLg
+
+============================
+2)
+https://www.pexels.com/api/documentation/
 
 
+lesson1.py:
+import requests
 
-1.03.2026
-1)Duolingo - 1lesson - DONE!
-2)3hours - IT - DONE!
-3)Python basics - continue - DONE!
-=================
-2.03.2026
-1)Duolingo - 1lesson - DONE!
-2)1hour -IT - DONE!
-3)Python basics - continue - DONE!
-4)1hour - IT - DONE!
-5)1hour - IT - DONE!
-=================
-3.03.2026
-1)Duolingo - 1lesson - DONE!
-2)1hour - IT - DONE!
-3)Python basics - continue - DONE!
-4)1hour - IT - DONE!
-5)1hour - IT - DONE!
-=================
-4.03.2026
-1)Duolingo - 1lesson - DONE!
-2)1hour - IT - DONE!
-3)1hour - IT - DONE!
-4)1hour - IT - DONE!
-5)10 words - repeat
-=================
-5.03.2026
-1)Duolingo - 1lesson - DONE!
-2)3hours - IT - DONE!
-3)Python basics - continue - DONE!
-=================
-6.03.2026
-1)Duolingo - 1lesson - DONE!
-2)1hour - IT - DONE!
-3)2hour - IT - DONE!
-4)Python basics - FINISHED!
-=================
-7.03.2026
-1)Duolingo - 1lesson - DONE!
-2)3hours - IT - DONE!
-3)Python tasks - 16tasks - DONE!
-4)Python - work with File - DONE!
-=================
-8.03.2026
-1)Duolingo - 1lesson - DONE!
-2)1hour - IT - DONE!
-3)Python - requests - continue - DONE!
-=================
-9.03.2026
-1)Duolingo - 1lesson - DONE!
-2)1hour - IT - DONE!
-3)Python - requests - continue - DONE!
-=================
+def download(q: str):
+    header = {"Authorization": "bunBW0IChmP7S0VR6rj1qtQU4qnAS1itr9zdQwnDKI2kmFkAoKYAUeLg"}
+    url = f"https://api.pexels.com/v1/search?query={q}&per_page=1"
+    r = requests.get(url, headers=header)
+    print(r)
 
+def main() -> None:
+    q = input("Query ")
+    download(q)
+    
+main()
+
+далее запускаем код - вводим fox
+=============================
+3)
 
 
 
