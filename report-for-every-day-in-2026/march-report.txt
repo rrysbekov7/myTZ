@@ -56,6 +56,7 @@
 =================
 10.03.2026
 1)Duolingo - 1lesson - DONE!
-2)3hours - IT
+2)3hours - IT - DONE!
 3)Python - requests - FINISH!
 4)Python - subprocess - continue - DONE!
+5)Python - task - continue - DONE!

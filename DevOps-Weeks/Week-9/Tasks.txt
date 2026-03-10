@@ -153,47 +153,24 @@ def greet(name):
 greet('Renat')
 ===========================
 17)
-lesson1.py:
-import requests
+Я создал текстовый файл test.txt и в нем написал 
+первую строку -> Hello Python
 
-response = requests.get("https://facebook.com")
-print(response)
-print(response.text)
+===========================
+18)
+Прочитай файл test.txt и выведи содержимое.
+
+РЕШЕНИЕ:
+import os 
+
+read_text = open("test.txt", "r")
+my_file = read_text.read()
+
+print(my_file)
+
 
 ============================
-1)
-https://www.pexels.com/ -> registration -> get started ->
-https://www.pexels.com/ru-ru/api/key/ ->
-api-key: bunBW0IChmP7S0VR6rj1qtQU4qnAS1itr9zdQwnDKI2kmFkAoKYAUeLg
-
-============================
-2)
-https://www.pexels.com/api/documentation/
-
-
-lesson1.py:
-import requests
-
-def download(q: str):
-    header = {"Authorization": "bunBW0IChmP7S0VR6rj1qtQU4qnAS1itr9zdQwnDKI2kmFkAoKYAUeLg"}
-    url = f"https://api.pexels.com/v1/search?query={q}&per_page=1"
-    r = requests.get(url, headers=header)
-    print(r)
-
-def main() -> None:
-    q = input("Query ")
-    download(q)
-    
-main()
-
-далее запускаем код - вводим fox
-=============================
-3)
-
-
-
-
-
+19)
 
 
 

@@ -160,7 +160,7 @@ other_num = my_num
 print(id(other_num)) ->
 
 34)VS CODE:
-long_str = "This is a vey long string"
+long_str = "This is a very long string"
 
 print(long_str)
 print(type(long_str))
@@ -2329,7 +2329,84 @@ print(response.json()["sold"])
 https://petstore.swagger.io/v2/
 
 ================================================
+0)
+lesson1.py:
+import requests
 
+response = requests.get("https://facebook.com")
+print(response)
+print(response.text)
+
+============================
+1)
+https://www.pexels.com/ -> registration -> get started ->
+https://www.pexels.com/ru-ru/api/key/ ->
+api-key: bunBW0IChmP7S0VR6rj1qtQU4qnAS1itr9zdQwnDKI2kmFkAoKYAUeLg
+
+============================
+2)
+https://www.pexels.com/api/documentation/
+
+
+lesson1.py:
+import requests
+
+def download(q: str):
+    header = {"Authorization": "bunBW0IChmP7S0VR6rj1qtQU4qnAS1itr9zdQwnDKI2kmFkAoKYAUeLg"}
+    url = f"https://api.pexels.com/v1/search?query={q}&per_page=1"
+    r = requests.get(url, headers=header)
+    print(r)
+
+def main() -> None:
+    q = input("Query ")
+    download(q)
+    
+main()
+
+далее запускаем код - вводим fox
+=============================
+
+
+PYTHON - SUBPROCESS
+1)
+main.py:
+import os
+os.system('notepad')
+
+далее запуск кода
+=========================
+2)
+main.py:
+import os
+os.system('C:/Users/User/Desktop/Резюме.doc')
+os.startfile('C:/Users/User/Desktop/Резюме.doc')
+
+=========================
+3)
+main.py:
+import os
+# os.system('C:/Users/User/Desktop/Резюме.doc')
+# os.startfile('C:/Users/User/Desktop/Резюме.doc')
+
+import subprocess
+import shlex
+cmd = 'cmd /?'
+args = shlex.split(cmd)
+p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+result = p.communicate()[0]
+
+print(result)
+
+==========================
+4)
+main.py:
+import subprocess
+cmd = 'ping 8.8.8.8'
+p = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
+result = p.communicate()[0]
+print(result.decode('cp866'))
+
+==========================
 
 
 
