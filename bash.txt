@@ -1,0 +1,218 @@
+LESSON6
+#!/bin/bash
+echo "Введите марку телефона"
+read brand
+if [[ $brand == "samsung" ]] || [[ $brand == "nokia" ]] || [[ $brand == "huawei" ]] || [[ $brand == "iphone" ]]; then
+	case $brand in
+	    samsung)
+		    echo "Скидка на телефоны $brand - 30%";;
+	    nokia)
+		    echo "Скидка на телефоны $brand - 10%";;
+	    huawei)
+		    echo "Скидка на телефоны $brand - 20%";;
+	    *)
+		    echo "На этот вид товара скидок нет"
+    esac
+fi
+#Решение при помощи вложенного if
+echo "Введите марку телефона"
+read brand
+if [[ $brand == "samsung" ]] || [[ $brand == "nokia" ]] || [[ $brand == "huawei" ]] || [[ $brand == "iphone" ]]; then
+	if [[ $brand == "samsung" ]]; then
+		echo "Скидка на $brand - 30%"
+	elif [[ $brand == "nokia" ]]; then
+		echo "Скидка на $brand - 10%"
+	elif [[ $brand == "huawei" ]]; then
+		echo "Скидка на $brand - 20%"
+	else
+		echo "На данный вид товара скидок нет"
+	fi
+ else echo "$brand - не марка телефона."
+fi
+
+==============================
+LESSON 7 - CODE1
+#!/bin/bash
+Array=(2 34 565 8)
+Array2 =(34 3 five)
+echo ${Array[@]}
+echo ${Array2[@]}
+
+==============================
+LESSON 7 - CODE2
+#!/bin/bash
+Array=(2 34 565 8)
+Array2 =(34 3 five)
+echo ${!Array[@]}
+echo ${!Array2[@]}
+
+==============================
+LESSON 7 - CODE3
+#!/bin/bash
+Array=(2 34 565 8)
+Array2 =(34 3 five)
+echo ${Array[2]}
+echo ${Array2[0]}
+
+==============================
+LESSON 7 - CODE4
+#!/bin/bash
+Array=(2 34 565 8)
+Array2 =(34 3 five)
+echo ${#Array[@]}
+echo ${#Array2[@]}
+
+===============================
+LESSON 7 - CODE5
+#!/bin/bash
+Array=(2 34 565 8)
+Array2 =(34 3 five)
+echo ${#Array[1]}
+echo ${#Array2[2]}
+
+===============================
+LESSON 7 - CODE6
+#!/bin/bash
+Array=(2 34 565 8)
+Array2 =(34 3 five)
+echo ${Array[1]}
+echo ${Array2[2]}
+Array[3]=four
+Array2[2]=5
+echo ${Array[1]}
+echo ${Array2[2]}
+
+===============================
+LESSON 7 - CODE7
+#!/bin/bash
+Array=(2 34 565 8)
+for i in ${!Array[@]}; do
+    echo "${Array[$i]}"
+done
+
+===============================
+LESSON 8 - CODE1
+#!/bin/bash
+for n in 1 2 3;
+  do
+     echo $n;
+done
+
+===============================
+LESSON 8 - CODE2
+#!/bin/bash
+for ((i=0; i<10; i++)); do
+  echo $i;
+done
+
+===============================
+LESSON 8 - CODE3
+#!/bin/bash
+n=1
+while [ $n -lt 4 ] 
+  do
+    echo "$n"
+    n=$(( $n+1 ))
+done
+
+===============================
+LESSON 9 - CODE1
+#!/bin/bash
+list_files() {
+  echo "Print cataloge text"
+  cd ~/my_script -> file dir
+  ls;
+}
+list_files
+
+===============================
+LESSON 10 - CODE1
+#!/bin/bash
+Example() {
+  echo "How is 2+2?"
+  read answer
+  if [[ $answer == 4]]; then
+    echo "Answer is correct!"
+  else
+    echo "Answer is wrong!Try again"
+    echo
+    Example
+  fi
+}
+echo "Recursion example: "
+Example
+
+
+===============================
+LESSON 11 - CODE1
+#!/bin/bash
+echo "Данный вывод должен попасть в файле" > ~/.my_script/logfile
+
+===============================
+LESSON 11 - CODE2
+#!/bin/bash
+echo "Данный вывод должен попасть в файле" >> ~/.my_script/logfile
+
+===============================
+LESSON 11 - CODE3
+#!/bin/bash
+read text < ~/.my_script/logfile
+echo $text
+
+==================
+LOGFILE:
+Stroka 1
+Stroka 2
+Stroka 3
+=================================
+LESSON 11 - CODE4
+#!/bin/bash
+read text < ~/.my_script/logfile
+while read text; do
+  echo $text
+done < ~/.my_script/logfile
+
+=================================
+LESSON 11 - CODE5
+#!/bin/bash
+while read text; do
+  array[$i]=$text
+  i=$(($i+1))
+done < ~/.my_script/logfile
+echo
+echo
+for i in ${!array[@]}; do
+  echo "${array[$i]}"
+done
+
+=================================
+LESSON 11 - CODE6
+#!/bin/bash
+cat < ~/.my_script/logfile
+
+=================================
+LESSON 11 - CODE7
+#!/bin/bash
+ls /dev | grep sd[a-z][1-9]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
