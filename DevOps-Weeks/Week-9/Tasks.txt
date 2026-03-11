@@ -153,6 +153,13 @@ def greet(name):
 greet('Renat')
 ===========================
 17)
+Создай файл:
+test.txt
+
+и запиши туда строку:
+Hello Python
+
+РЕШЕНИЕ:
 Я создал текстовый файл test.txt и в нем написал 
 первую строку -> Hello Python
 
@@ -171,16 +178,93 @@ print(my_file)
 
 ============================
 19)
+Создай файл numbers.txt.Запиши туда числа от 1 до 10.
 
+РЕШЕНИЕ:
+Я создал файл number.txt и записал туда:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+============================
+20)
+Прочитай файл numbers.txt.Посчитай сумму чисел.
 
+РЕШЕНИЕ:
+import os 
 
+total = 0
+read_text = open("number.txt", "r")
+for i in read_text:
+    total += int(i)
+    
+print("Сумма чисел:", total)
 
+=============================
+21)
+Создай файл names.txt.Добавь туда 5 имён.
 
+РЕШЕНИЕ:
+Я создал файл names.txt и написал туда 5 имен:
+Renat
+Talgat
+Bayram
+Skripi
+Gercog
 
+=============================
+22)
+Прочитай файл и выведи каждую строку.
 
+РЕШЕНИЕ:
+import os 
 
+total = 0
+read_text = open("names.txt", "r")
+for name in read_text:
+    print(name)
 
+=============================
+23)
+Посчитай количество строк в файле.
 
+РЕШЕНИЕ:
+import os 
+
+total = 0
+read_text = open("names.txt", "r")
+my_file = read_text.read()
+
+print(len(my_file))
+
+=============================
+24)
+Найди самое длинное слово в файле.
+
+РЕШЕНИЕ:
+import os 
+
+total = 0
+read_text = open("names.txt", "r")
+my_file = list(read_text)
+
+print(my_file)
+count_list = []
+
+for name in my_file:
+    count_list.append(len(name))
+print(count_list)
+print(max(count_list))
+
+==============================
+25)
+Скопируй содержимое одного файла в другой.
 
 
 
