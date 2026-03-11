@@ -1,0 +1,67 @@
+
+1.03.2026
+1)Duolingo - 1lesson - DONE!
+2)3hours - IT - DONE!
+3)Python basics - continue - DONE!
+=================
+2.03.2026
+1)Duolingo - 1lesson - DONE!
+2)1hour -IT - DONE!
+3)Python basics - continue - DONE!
+4)1hour - IT - DONE!
+5)1hour - IT - DONE!
+=================
+3.03.2026
+1)Duolingo - 1lesson - DONE!
+2)1hour - IT - DONE!
+3)Python basics - continue - DONE!
+4)1hour - IT - DONE!
+5)1hour - IT - DONE!
+=================
+4.03.2026
+1)Duolingo - 1lesson - DONE!
+2)1hour - IT - DONE!
+3)1hour - IT - DONE!
+4)1hour - IT - DONE!
+5)10 words - repeat
+=================
+5.03.2026
+1)Duolingo - 1lesson - DONE!
+2)3hours - IT - DONE!
+3)Python basics - continue - DONE!
+=================
+6.03.2026
+1)Duolingo - 1lesson - DONE!
+2)1hour - IT - DONE!
+3)2hour - IT - DONE!
+4)Python basics - FINISHED!
+=================
+7.03.2026
+1)Duolingo - 1lesson - DONE!
+2)3hours - IT - DONE!
+3)Python tasks - 16tasks - DONE!
+4)Python - work with File - DONE!
+=================
+8.03.2026
+1)Duolingo - 1lesson - DONE!
+2)1hour - IT - DONE!
+3)Python - requests - continue - DONE!
+=================
+9.03.2026
+1)Duolingo - 1lesson - DONE!
+2)1hour - IT - DONE!
+3)Python - requests - continue - DONE!
+4)1hour - IT - DONE!
+5)1hour - IT - DONE!
+=================
+10.03.2026
+1)Duolingo - 1lesson - DONE!
+2)3hours - IT - DONE!
+3)Python - requests - FINISH!
+4)Python - subprocess - continue - DONE!
+5)Python - task - continue - DONE!
+=================
+11.03.2026
+1)Duolingo - 1lesson - DONE!
+2)1hour - IT - DONE!
+3)Python - tasks - continue - DONE!

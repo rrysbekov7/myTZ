@@ -160,7 +160,7 @@ other_num = my_num
 print(id(other_num)) ->
 
 34)VS CODE:
-long_str = "This is a vey long string"
+long_str = "This is a very long string"
 
 print(long_str)
 print(type(long_str))
@@ -1999,29 +1999,414 @@ bike = [el for el in my_motorbike if len(el) > 3]
 
 print(bike)
 
-221)
+==================================================
+PYTHON - Работа с файловой системой
+в VS CODE создаем 2 файла:
+1)main.py
+2)test.txt
+
+1)
+main.py:
+import os
+print(os.path.exists('test.txt'))
+
+далее запускаем код - Получим True
+
+================
+2)
+import os
+
+print(os.path.isfile('test.txt'))
+
+далее запускаем код - Получим True
+
+================
+3)
+import os
+
+os.rename('test.txt', 'new-test.txt')
+
+далее запускаем код - название файла изменится
+================
+4)
+import os
+
+os.remove('new-test.txt')
+
+далее запускаем код - файл удалится - ОСТОРОЖНО!
+================
+5)
+import os
+
+print(os.getcwd())
+
+далее запускаем код - показывает путь - где мы находимся по директории
+================
+6)
+import os
+
+os.mkdir('new_cat')
+
+далее запускаем код - создает новую директорию в той директории где мы работаем
+================
+7)
+import os
+
+os.mkdir('C:/Users/User/Desktop/My')
+#os.mkdir('C:\\Users\\User\\Desktop\\My') -> alternative
+
+
+далее запускаем код - можем создать папку в указанной директории
+================
+8)
+import os
+
+os.rmdir('new_cat')
+
+далее запускаем код - удаляем папку в директории
+================
+9)
+import os
+import shutil
+
+shutil.rmtree('new_cat')
+
+далее запускаем код - он удаляет папку вместе с его содержимым - точнее если папка не пуста
+=================
+10)
+import os
+
+print(os.listdir('cat'))
+
+далее запускаем код - он покажет что есть внутри папки cat
+=================
+11)
+import os
+
+os.replace('task.txt', 'cat/task.txt')
+
+далее запускаем код - он перемещает файл в указанную директорию - например в cat
+=================
+12)
+import os
+
+os.chdir('cat')
+print(os.listdir('.'))
+
+далее запускаем код - перемещение на другой каталог
+=================
+13)
+f=open("text.txt", "r")
+a=f.read()
+print(a)
+f.close()
+
+в text.txt в той же директории где мы:
+Hello my Dear!
+
+далее запускаем код - увидим содержимое файла text.txt
+=================
+14)
+f=open("text.txt", "w")
+f.write("Can I help you?")
+f.close()
+
+
+далее запускаем код - в файле text.txt текст перезапишется на Can I help you?
+=================
+
+
+Python REQUESTS
+1)Открываем Powershell -> python -m pip install requests(python -m так как напрямую pip не запустилась - нужно настроить его)
+main.py:
+1)
+import requests
+
+response = requests.get('https://www.google.com/')
+print(response.status_code) 
+
+далее запускаем код - и видим статус сайта - 200
+================================
+2)
+import requests
+
+response = requests.get('https://www.google.com/')
+print(response.status_code) -> статус сайта
+print(response.headers) ->Служебная информация
+print(response.content) -> HTML Content
+
+===============================
+3)
+import requests
+
+response = requests.get('https://www.google.com/')
+# print(response.status_code)
+# print(response.headers)
+# print(response.content)
+print(response.text) ->in HTML - more understandable
+
+===============================
+4)
+import requests
+
+params = {"q" : "funny cats"}
+
+response = requests.get('https://www.google.com/search', params=params)
+
+print(response.text)
+
+
+далее запускаем код - получаем html код этой страницы-его можем сохранить у себя в другом файле
+и запустить
+===============================
+5)
+а)Переходим на страницу - https://home.openweathermap.org/api_keys
+б)Там регаемся
+в)заходим во вкладку my_api_keys
+
+d061ce27096266c5507f70dd3e46f127 - my key
+
+https://old.openweathermap.org/api
+https://old.openweathermap.org/current
+
+apikey.py:
+API_TOKEN = "d061ce27096266c5507f70dd3e46f127"
+
+main.py:
+import requests
+from apikey import API_TOKEN
+
+params = {"q" : "Лондон", "appid" : API_TOKEN}
+
+response = requests.get('https://api.openweathermap.org/data/2.5/weather', params=params)
+
+#print(response.text)
+print(response.json())
+
+================================
+6)
+
+a)https://jsonplaceholder.typicode.com/posts
+b)https://httpbin.org/#/Request_inspection/get_headers -> Request inspection -> Try out -> оттуда копируем dictionary - headers
+
+import requests
+from apikey import API_TOKEN
+
+params = {"q" : "Лондон", "appid" : API_TOKEN}
+
+headers = {
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Host": "httpbin.org",
+    "Priority": "u=1, i",
+    "Referer": "https://httpbin.org/",
+    "Sec-Ch-Ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"Windows\"",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "X-Amzn-Trace-Id": "Root=1-69ae1449-66468c63375f8d75788e7649"
+  }
+
+response = requests.get('https://httpbin.org/headers', headers=headers)
+
+#print(response.text)
+print(response.json())
+
+======================================
+7)
+переходим на сайт https://httpbin.org -> HTML Forms(https://httpbin.org/forms/post) ->
+в этой страничке открываем - посмотреть код -> 
+заполняем первые три поля и далее нажимаем на submit ->
+и далее во вкладке посмотреть код ->
+там во вкладке network -> мы увидим наш запрос POST
+
+
+https://httpbin.org/forms/post ->
+заполняем первые три поля и внизу ставим галочку на одни из них ->
+нажимаем на submit ->
+
+main.py:
+
+import requests
+from apikey import API_TOKEN
+
+data = {
+    "custname": "Renat Rysbekov",
+    "custtel": "0708900163",
+    "custemail": "rysbekovrenat322@gmail.com",
+    "delivery": "",
+    "comments": "",
+}
+
+headers = {
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Host": "httpbin.org",
+    "Priority": "u=1, i",
+    "Referer": "https://httpbin.org/",
+    "Sec-Ch-Ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"Windows\"",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "X-Amzn-Trace-Id": "Root=1-69ae1449-66468c63375f8d75788e7649"
+  }
+
+response = requests.post('https://httpbin.org/post', headers=headers, data=data)
+
+print(response)
+print(response.text)
+
+============================================
+8)
+main.py:
+import requests
+from apikey import API_TOKEN
+
+data = {
+    "custname": "Renat Rysbekov",
+    "custtel": "0708900163",
+    "custemail": "rysbekovrenat322@gmail.com",
+    "delivery": "",
+    "comments": "",
+}
+
+headers = {
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Host": "httpbin.org",
+    "Priority": "u=1, i",
+    "Referer": "https://httpbin.org/",
+    "Sec-Ch-Ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"Windows\"",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "X-Amzn-Trace-Id": "Root=1-69ae1449-66468c63375f8d75788e7649"
+  }
+
+variable = requests.Session()
+
+aaa = variable.get("https://httpbin.org/forms/post")
+response = variable.post('https://httpbin.org/post', headers=headers, data=data, allow_redirects=True)
+
+print(response)
+print(response.text)
+
+============================================
+9)
+lesson1.py:
+import requests
+from requests.auth import HTTPBasicAuth
+
+response = requests.get(
+    url="https://petstore.swagger.io/v2/store/inventory",
+    # auth=HTTPBasicAuth("username")
+    headers={
+        "api_key": "special-key"},
+    # params={},
+    # verify=False
+)
+
+print(response.json())
+print(response.status_code)
+print(response.json()["sold"])
 
 
 
+также https://petstore.swagger.io/#/store/getInventory -> store -> get ->
+и на самом вверху есть url https://petstore.swagger.io/v2/swagger.json ->
+https://petstore.swagger.io/v2/
+
+================================================
+0)
+lesson1.py:
+import requests
+
+response = requests.get("https://facebook.com")
+print(response)
+print(response.text)
+
+============================
+1)
+https://www.pexels.com/ -> registration -> get started ->
+https://www.pexels.com/ru-ru/api/key/ ->
+api-key: bunBW0IChmP7S0VR6rj1qtQU4qnAS1itr9zdQwnDKI2kmFkAoKYAUeLg
+
+============================
+2)
+https://www.pexels.com/api/documentation/
 
 
+lesson1.py:
+import requests
+
+def download(q: str):
+    header = {"Authorization": "bunBW0IChmP7S0VR6rj1qtQU4qnAS1itr9zdQwnDKI2kmFkAoKYAUeLg"}
+    url = f"https://api.pexels.com/v1/search?query={q}&per_page=1"
+    r = requests.get(url, headers=header)
+    print(r)
+
+def main() -> None:
+    q = input("Query ")
+    download(q)
+    
+main()
+
+далее запускаем код - вводим fox
+=============================
 
 
+PYTHON - SUBPROCESS
+1)
+main.py:
+import os
+os.system('notepad')
 
+далее запуск кода
+=========================
+2)
+main.py:
+import os
+os.system('C:/Users/User/Desktop/Резюме.doc')
+os.startfile('C:/Users/User/Desktop/Резюме.doc')
 
+=========================
+3)
+main.py:
+import os
+# os.system('C:/Users/User/Desktop/Резюме.doc')
+# os.startfile('C:/Users/User/Desktop/Резюме.doc')
 
+import subprocess
+import shlex
+cmd = 'cmd /?'
+args = shlex.split(cmd)
+p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+result = p.communicate()[0]
 
+print(result)
 
+==========================
+4)
+main.py:
+import subprocess
+cmd = 'ping 8.8.8.8'
+p = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
+result = p.communicate()[0]
+print(result.decode('cp866'))
 
-
-
-
-
-
-
-
-
-
+==========================
 
 
 

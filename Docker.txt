@@ -1,0 +1,123 @@
+1)calendar code
+===============
+import calendar 
+
+print('Welcome in calendar\n')
+
+year = int(input('Input your year: '))
+month = int(input('Input your number of month: '))
+print(calendar.month(year, month))
+
+print('Good Bye');
+
+
+2)Dockerfile in main.py instructions:
+
+FROM python:alpine
+
+WORKDIR /app
+
+COPY . .
+
+CMD ["python", "main.py"]
+
+================
+calendar code - 2.0.0
+
+import calendar 
+
+print('Welcome in Super calendar\n')
+
+year = int(input('Input your year: '))
+month = int(input('Input your number of month: '))
+print(calendar.month(year, month))
+
+print('Good Bye');
+
+================
+
+index.mjs code
+import fs from 'fs'
+
+fs.appendFile('my-file.txt', 'File created Node.js', (err) => {
+    if(err) throw err
+    console.log('File saved!')
+})
+
+================
+Dockerfile in index.mjs instructions:
+
+FROM node:alpine
+
+WORKDIR /app
+
+COPY  . .
+
+CMD [ "node", "index.mjs" ]
+
+================
+index.mjs code 2.0
+import fs from 'fs'
+
+fs.appendFile('my-file.txt', 'File created Node.js', (err) => {
+    if(err) throw err
+    console.log('File saved!')
+})
+
+setTimeout(() => console.log('Finish!'), 30000)
+
+
+=================
+pymongo code
+
+from pymongo import MongoClient
+from pprint import pprint
+
+MONGO_URL = "mongodb://mongo:27017"
+client = MongoClient(MONGO_URL)
+db = client.admin
+dbs_list = db.command("listDatabases")
+pprint(dbs_list)
+
+print("End")
+
+=================
+pymongo dockerfile instructions
+
+FROM python:alpine
+
+WORKDIR /app
+
+RUN pip install pymongo
+
+COPY . .
+
+CMD [ "python", "main.py" ]
+
+
+=================
+docker compose yml code
+
+version: '3'
+
+services:
+  app:
+    build: ./app
+  mongo:
+    image: mongo
+
+=================
+
+
+docker run `
+--name my-nginx `
+-v ${PWD}:/usr/share/nginx/html `
+-p 8088:80 `
+-d `
+--rm `
+nginx
+
+
+
+
+
