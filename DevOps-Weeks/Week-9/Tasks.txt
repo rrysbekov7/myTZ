@@ -266,6 +266,143 @@ print(max(count_list))
 25)
 Скопируй содержимое одного файла в другой.
 
+РЕШЕНИЕ:
+import os 
+
+read_text = open("names.txt", "r")
+my_name = read_text.read()
+
+copy_text = open("namecopy.txt", "w")
+my_copy_name = copy_text.write(my_name)
+
+==============================
+26)
+Создай лог файл: app.log
+и добавляй туда строки через режим: "a"
+
+РЕШЕНИЕ:
+Я создал файл app.log - внутри пусто
+
+и далее
+import os 
+
+read_text = open("app.log", "w")
+answer = input("Выйти или нет?-Yes/No: ")
+while answer != "No":
+    answer = input("Выйти или нет?-Yes/No: ")
+    read_text.write("a\n")
+
+===============================
+27)
+Сделай GET запрос к API:
+https://api.github.com
+
+Задача:
+получить ответ
+вывести статус код
+
+РЕШЕНИЕ:
+import requests
+
+response = requests.get("https://api.github.com")
+print(response)
+print(response.status_code)
+
+================================
+28)
+Сделай GET запрос к:
+https://api.github.com
+
+Выведи:
+заголовки ответа
+
+РЕШЕНИЕ:
+import requests
+
+response = requests.get("https://api.github.com")
+print(response)
+print(response.headers)
+
+================================
+29)
+Получить JSON данные с API:
+https://api.github.com
+
+Задача:
+преобразовать ответ в JSON
+вывести данные
+
+
+РЕШЕНИЕ:
+import requests
+
+response = requests.get("https://api.github.com")
+print(response)
+print(response.json())
+
+=================================
+30)
+Сделай запрос к API:
+https://jsonplaceholder.typicode.com/posts
+
+Это тестовый API.
+
+Задача:
+получить список постов
+вывести первые 3 поста
+
+
+РЕШЕНИЕ:
+import requests
+
+response = requests.get("https://jsonplaceholder.typicode.com/posts")
+print(response.json())
+
+for i in range(3):
+    print(response.json()[i])
+
+==================================
+31)
+Получить пользователей из API:
+https://jsonplaceholder.typicode.com/users
+
+Вывести:
+имена пользователей
+
+РЕШЕНИЕ:
+import requests
+
+response = requests.get("https://jsonplaceholder.typicode.com/users")
+print(response.json())
+print('=====================')
+
+for i in range(len(response.json())):
+    print(response.json()[i]['name'])
+
+===================================
+32)
+Сохрани ответ API в файл.
+API:
+https://jsonplaceholder.typicode.com/posts
+
+Файл:
+posts.json
+
+РЕШЕНИЕ:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
