@@ -389,7 +389,45 @@ https://jsonplaceholder.typicode.com/posts
 posts.json
 
 РЕШЕНИЕ:
+import requests
+import json
 
+url = "https://jsonplaceholder.typicode.com/posts"
+
+response = requests.get(url)
+
+data = response.json()
+
+with open("posts.json", "w") as file:
+    json.dump(data, file, indent=4)
+
+print("Данные сохранены в posts.json")
+
+====================================
+33)
+Сделай запрос к несуществующему сайту и обработай ошибку.
+Например:
+https://jsonplaceholder.typicode.com/invalid
+
+Используй:
+try / except
+
+РЕШЕНИЕ:
+import requests
+
+url = "https://jsonplaceholder.typicode.com/invalid"
+
+try:
+    response = requests.get(url)
+    response.raise_for_status() -> отображает статус ответа
+
+    print(response.json())
+
+except requests.exceptions.RequestException as error:
+    #RequestException -> Общая ошибка на исключения request
+    print("Произошла ошибка:", error)
+
+======================================
 
 
 
