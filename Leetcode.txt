@@ -4,15 +4,10 @@ Leetcode
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for i in range(len(nums)):
-            if (i == 0):
-                if(nums[i] + nums[i+1] == target):
-                    return [i, i+1]
-            elif (nums[i] == nums[-1]):
-
-                if(nums[i] + nums[0] == target):
-                    return [i, 0]
-            else:
-                if(nums[i] + nums[i+1] == target):
-                    return [i, i+1]
+            for j in range(len(nums)):
+                if(i == j):
+                    break
+                elif (nums[i] + nums[j] == target):
+                    return [j, i]
 
 ===========================================
