@@ -77,3 +77,8 @@
 1)Duolingo - 1lesson - DONE!
 2)1hour - IT - DONE!
 3)Python tasks - continue - DONE!
+=================
+1)Duolingo - 1lesson - DONE!
+2)8hours - IT
+3)Python tasks - continue - DONE!
+4)DevOps - week-10 - continue - DONE!
