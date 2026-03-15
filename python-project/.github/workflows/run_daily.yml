@@ -1,12 +1,12 @@
 name: Daily Super Bot
 on: 
   push: #когда будет выполнять пуш - выполняется скрипт
-  
+
 jobs: #что нужно делать
   Daily-Run:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout code
+      - name: Checkout Code
         uses: actions/checkout@v4
 
 # name: GitHub Actions Demo
