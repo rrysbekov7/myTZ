@@ -2541,3 +2541,118 @@ if __name__ == '__main__':
     send_message(weather)
 
 ===================================
+3.run_daily.yml
+
+name: Daily Super Bot
+
+on:
+  push:
+
+jobs:
+  daily-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+
+
+=====================================
+4.run_daily.yml
+
+
+name: Daily Super Bot
+
+on:
+  push:
+env:
+  TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }} #берем с гитхаба - secrets
+  TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }} #берем с гитхаба - secrets
+
+
+jobs:
+  daily-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run App
+        run: python main.py
+
+
+
+
+
+==============================
+5.
+name: Daily Super Bot
+
+on:
+  schedule:
+      - cron: '* * * * *'
+env:
+  TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+  TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+
+jobs:
+  daily-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run App
+        run: python main.py
+        
+
+==============================
+6.
+name: Daily Super Bot
+
+on:
+  workflow_dispatch:
+    
+env:
+  TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+  TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+
+jobs:
+  daily-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run App
+        run: python main.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
