@@ -8,4 +8,7 @@ jobs: #что нужно делать
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+      
+      - name: Run script
+        run: python main.py
 
