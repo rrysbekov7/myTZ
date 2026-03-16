@@ -1,14 +1,23 @@
 name: Daily Super Bot
-on: 
-  push: #когда будет выполнять пуш - выполняется скрипт
 
-jobs: #что нужно делать
-  Daily-Run:
+on:
+  push:
+
+jobs:
+  daily-run:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-      
-      - name: Run script
-        run: python main.py
 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run bot
+        run: python main.py
