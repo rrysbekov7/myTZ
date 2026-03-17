@@ -92,3 +92,5 @@
 1)Duolingo - 1lesson - DONE!
 2)1hour - IT - DONE!
 3)Github actions - continue - DONE!
+4)1hour - IT - DONE!
+5)1hour - IT - DONE!
