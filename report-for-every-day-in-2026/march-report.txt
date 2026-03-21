@@ -120,5 +120,5 @@
 ==================
 21.03.2026
 1)Duolingo - 1lesson - DONE!
-2)3hours - IT
+2)3hours - IT - DONE!
 3)Docker - continue - DONE!
