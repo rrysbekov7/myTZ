@@ -117,6 +117,90 @@ docker run `
 --rm `
 nginx
 
+=========================================================================================
+*3)https://youtu.be/_pmbcKuxNkk 
+1)Dockerfile
+FROM ubuntu:22.04
+CMD echo "Hello my FIRST Docker"
+
+2)Dockerfile
+FROM ubuntu:22.04
+CMD echo "Hello my SECOND Docker"
+
+3)Dockerfile
+FROM ubuntu:22.04
+ENTRYPOINT echo "Hello my FIRST Docker"
+
+4)Dockerfile
+FROM ubuntu:22.04
+CMD [ "echo", "Hello my FIRST Docker" ]
+
+5)Dockerfile
+FROM ubuntu:22.04
+ENTRYPOINT [ "echo" ]
+CMD [ "Hello my FIRST Docker" ]
+
+6)Dockerfile
+FROM ubuntu:22.04
+LABEL autor=RomNero
+LABEL type=demo
+LABEL platform=YouTube
+CMD [ "echo", "Hello my FIRST Docker" ]
+
+7)Dockerfile
+FROM ubuntu:22.04
+LABEL autor=RomNero
+RUN apt-get update
+RUN apt-get install nginx -y
+CMD [ "echo", "Hello my FIRST Docker" ]
+
+8)Dockerfile
+FROM ubuntu:22.04
+LABEL autor=RomNero
+RUN apt-get update
+RUN apt-get install nginx -y
+CMD [ "nginx", "-g", "daemon off;" ]
+
+9)Dockerfile
+FROM ubuntu:22.04
+LABEL autor=RomNero
+RUN apt-get update
+RUN apt-get install nginx -y
+EXPOSE 80
+EXPOSE 443/tcp
+CMD [ "nginx", "-g", "daemon off;" ]
+
+10)Dockerfile in apache
+FROM ubuntu:22.04
+LABEL autor=RomNero
+RUN apt-get update
+RUN apt-get install apache2 -y
+EXPOSE 80
+CMD [ "apache2ctl", "-D", "FOREGROUND" ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
