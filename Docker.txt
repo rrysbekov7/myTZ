@@ -245,6 +245,57 @@ ENV TYPE=demo
 EXPOSE 80
 CMD [ "nginx", "-g", "daemon off;" ]
 
+16)env-test > Dockerfile
+FROM ubuntu:22.04
+ENV OWNER=RomNero
+RUN echo $OWNER > /opt/info
+CMD [ "cat", "/opt/info" ]
+
+
+17)index.html in files
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>I AM FROM NGINX - YOU'RE WELCOME!</h1>
+    <h1>%OWNER% Docker %TYPE%</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In veniam est mollitia 
+        eum repellendus enim praesentium sapiente sed! Unde, velit. 
+        Harum, iste adipisci! At molestias iusto commodi quo nam eveniet.
+    </p>
+</body>
+</html>
+
+
+
+18)script.sh in files
+#!/bin/bash
+sed -i 's|%OWNER%|'"$OWNER"'|g' /var/www/html/index.html
+sed -i 's|%TYPE%|'"$TYPE"'|g' /var/www/html/index.html
+
+echo "Start Script --- OK"
+
+nginx -g 'daemon off;'
+
+19)Dockerfiles in docker2
+FROM ubuntu:22.04
+LABEL autor=RomNero
+RUN apt-get update
+RUN apt-get install nginx -y
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+WORKDIR /var/www/html/
+COPY files/index.html .
+COPY files/script.sh /opt/script.sh
+RUN chmod +x /opt/script.sh
+ENV OWNER=RomNero
+ENV TYPE=demo
+EXPOSE 80
+CMD [ "/opt/script.sh" ]
+
 
 
 
