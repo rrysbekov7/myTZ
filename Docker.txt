@@ -117,6 +117,207 @@ docker run `
 --rm `
 nginx
 
+=========================================================================================
+*3)https://youtu.be/_pmbcKuxNkk 
+1)Dockerfile
+FROM ubuntu:22.04
+CMD echo "Hello my FIRST Docker"
+
+2)Dockerfile
+FROM ubuntu:22.04
+CMD echo "Hello my SECOND Docker"
+
+3)Dockerfile
+FROM ubuntu:22.04
+ENTRYPOINT echo "Hello my FIRST Docker"
+
+4)Dockerfile
+FROM ubuntu:22.04
+CMD [ "echo", "Hello my FIRST Docker" ]
+
+5)Dockerfile
+FROM ubuntu:22.04
+ENTRYPOINT [ "echo" ]
+CMD [ "Hello my FIRST Docker" ]
+
+6)Dockerfile
+FROM ubuntu:22.04
+LABEL autor=RomNero
+LABEL type=demo
+LABEL platform=YouTube
+CMD [ "echo", "Hello my FIRST Docker" ]
+
+7)Dockerfile
+FROM ubuntu:22.04
+LABEL autor=RomNero
+RUN apt-get update
+RUN apt-get install nginx -y
+CMD [ "echo", "Hello my FIRST Docker" ]
+
+8)Dockerfile
+FROM ubuntu:22.04
+LABEL autor=RomNero
+RUN apt-get update
+RUN apt-get install nginx -y
+CMD [ "nginx", "-g", "daemon off;" ]
+
+9)Dockerfile
+FROM ubuntu:22.04
+LABEL autor=RomNero
+RUN apt-get update
+RUN apt-get install nginx -y
+EXPOSE 80
+EXPOSE 443/tcp
+CMD [ "nginx", "-g", "daemon off;" ]
+
+10)Dockerfile in apache
+FROM ubuntu:22.04
+LABEL autor=RomNero
+RUN apt-get update
+RUN apt-get install apache2 -y
+EXPOSE 80
+CMD [ "apache2ctl", "-D", "FOREGROUND" ]
+
+
+
+11)index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>I AM FROM NGINX - YOU'RE WELCOME!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In veniam est mollitia 
+        eum repellendus enim praesentium sapiente sed! Unde, velit. 
+        Harum, iste adipisci! At molestias iusto commodi quo nam eveniet.
+    </p>
+</body>
+</html>
+
+12)Dockerfile
+FROM ubuntu:22.04
+LABEL autor=RomNero
+RUN apt-get update
+RUN apt-get install nginx -y
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+COPY files/index.html /var/www/html
+EXPOSE 80
+CMD [ "nginx", "-g", "daemon off;" ]
+
+
+13)Dockerfile
+FROM ubuntu:22.04
+LABEL autor=RomNero
+RUN apt-get update
+RUN apt-get install nginx -y
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+WORKDIR /var/www/html/
+COPY files/index.html /var/www/html
+EXPOSE 80
+CMD [ "nginx", "-g", "daemon off;" ]
+
+
+14)Dockerfile
+FROM ubuntu:22.04
+LABEL autor=RomNero
+RUN apt-get update
+RUN apt-get install nginx -y
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+WORKDIR /var/www/html/
+COPY files/index.html .
+EXPOSE 80
+CMD [ "nginx", "-g", "daemon off;" ]
+
+
+15)Dockerfile
+FROM ubuntu:22.04
+LABEL autor=RomNero
+RUN apt-get update
+RUN apt-get install nginx -y
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+WORKDIR /var/www/html/
+COPY files/index.html .
+ENV OWNER=RomNero
+ENV TYPE=demo
+EXPOSE 80
+CMD [ "nginx", "-g", "daemon off;" ]
+
+16)env-test > Dockerfile
+FROM ubuntu:22.04
+ENV OWNER=RomNero
+RUN echo $OWNER > /opt/info
+CMD [ "cat", "/opt/info" ]
+
+
+17)index.html in files
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>I AM FROM NGINX - YOU'RE WELCOME!</h1>
+    <h1>%OWNER% Docker %TYPE%</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In veniam est mollitia 
+        eum repellendus enim praesentium sapiente sed! Unde, velit. 
+        Harum, iste adipisci! At molestias iusto commodi quo nam eveniet.
+    </p>
+</body>
+</html>
+
+
+
+18)script.sh in files
+#!/bin/bash
+sed -i 's|%OWNER%|'"$OWNER"'|g' /var/www/html/index.html
+sed -i 's|%TYPE%|'"$TYPE"'|g' /var/www/html/index.html
+
+echo "Start Script --- OK"
+
+nginx -g 'daemon off;'
+
+19)Dockerfiles in docker2
+FROM ubuntu:22.04
+LABEL autor=RomNero
+RUN apt-get update
+RUN apt-get install nginx -y
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+WORKDIR /var/www/html/
+COPY files/index.html .
+COPY files/script.sh /opt/script.sh
+RUN chmod +x /opt/script.sh
+ENV OWNER=RomNero
+ENV TYPE=demo
+EXPOSE 80
+CMD [ "/opt/script.sh" ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
