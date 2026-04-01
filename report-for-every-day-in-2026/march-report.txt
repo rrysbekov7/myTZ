@@ -168,6 +168,6 @@
 3)Docker - continue - DONE!
 ==================
 31.03.2026
-1)Duolingo - 1lesson - DONE!
-2)1hours - IT - DONE!
+1)Duolingo - 5lesson - DONE!
+2)3hours - IT - DONE!
 3)Docker Compose - continue - DONE!
