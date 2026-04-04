@@ -13,3 +13,10 @@
 =====================================
 3.04.2026
 1)Duolingo - 1lesson - DONE!
+2)20min- IT
+=====================================
+4.04.2026
+1)Duolingo - 7 lessons - DONE!
+2)3hours - IT - DONE!
+3)Docker-compose- continue - DONE!
+
