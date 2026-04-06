@@ -19,7 +19,13 @@
 1)Duolingo - 7 lessons - DONE!
 2)3hours - IT - DONE!
 3)Docker-compose- continue - DONE!
+=====================================
+5.04.2026
+1)Duolingo - 8lessons - DONE!
+2)3hours - IT - DONE!
 4)1hour - IT - DONE!
+5)Docker-Compose - continue - DONE!
+6)Linux book - begin - DONE!
 =====================================
 5.04.2026
 1)Duolingo - 6lessons - DONE!
