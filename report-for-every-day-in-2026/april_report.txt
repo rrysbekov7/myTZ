@@ -125,3 +125,10 @@
 2)3hours - IT - DONE!
 3)Gitlab CI - Begin - DONE!
 4)Docker - 10 tasks-A-level - DONE!
+=====================================
+21.04.2026
+1)Duolingo - 6lessons - DONE!
+2)Bash command line - DONE!
+3)Path:absolute and depends - DONE!
+4)Tree - DONE!
+5)Practice with basic command - DONE!
