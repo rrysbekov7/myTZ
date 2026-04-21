@@ -132,3 +132,4 @@
 3)Path:absolute and depends - DONE!
 4)Tree - DONE!
 5)Practice with basic command - DONE!
+6)Gitlab account - DONE!
