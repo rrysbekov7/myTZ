@@ -133,3 +133,9 @@
 4)Tree - DONE!
 5)Practice with basic command - DONE!
 6)Gitlab account - DONE!
+=====================================
+22.04.2026
+1)Duolingo - 7lessons - DONE!
+2)Gitlab CI/CD - basic codes - DONE!
+3)CI/CD - stages, jobs, steps, artefacts, needs - DONE!
+4)CI/CD - Practices - DONE!
