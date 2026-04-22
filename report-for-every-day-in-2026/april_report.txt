@@ -139,3 +139,4 @@
 2)Gitlab CI/CD - basic codes - DONE!
 3)CI/CD - stages, jobs, steps, artefacts, needs - DONE!
 4)CI/CD - Practices - DONE!
+5)Linux- ls, file, less
