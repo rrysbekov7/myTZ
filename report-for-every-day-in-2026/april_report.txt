@@ -106,3 +106,47 @@
 17.04.2026
 1)Duolingo - 7lessons - DONE!
 2)1hour - IT - DONE!
+3)1hour - IT - DONE!
+4)GH Actions - tasks - DONE!
+=====================================
+18.04.2026
+1)Duolingo - 5lessons - DONE!
+2)1hour - IT - DONE!
+=====================================
+19.04.2026
+1)Duolingo - 8lessons
+2)4hours - IT - DONE!
+3)Docker - repeat - DONE!
+4)Linux - continue - DONE!
+5)1hour - IT - DONE!
+=====================================
+20.04.2026
+1)Duolingo - 6lessons - DONE!
+2)3hours - IT - DONE!
+3)Gitlab CI - Begin - DONE!
+4)Docker - 10 tasks-A-level - DONE!
+=====================================
+21.04.2026
+1)Duolingo - 6lessons - DONE!
+2)Bash command line - DONE!
+3)Path:absolute and depends - DONE!
+4)Tree - DONE!
+5)Practice with basic command - DONE!
+6)Gitlab account - DONE!
+=====================================
+22.04.2026
+1)Duolingo - 7lessons - DONE!
+2)Gitlab CI/CD - basic codes - DONE!
+3)CI/CD - stages, jobs, steps, artefacts, needs - DONE!
+4)CI/CD - Practices - DONE!
+5)Linux- ls, file, less
+=====================================
+23.04.2026
+1)Duolingo - 7lessons - DONE!
+2)Linux - simlink and hardlink - DONE!
+3)Linux - catalogs - DONE!
+4)Practices with ls, ln, ln -s - DONE!
+=====================================
+24.04.2026
+1)Duolingo - 7lessons - DONE!
+2)Linux group symbols - * and ?
