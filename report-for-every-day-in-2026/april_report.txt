@@ -150,3 +150,9 @@
 24.04.2026
 1)Duolingo - 7lessons - DONE!
 2)Linux group symbols - * and ?
+=====================================
+25.04.2026
+1)Duolingo - 7lessons - DONE!
+2)Linux - symlink and hardlink - DONE!
+3)Linux - *-?-[]-{} - DONE!
+4)Gitlab - CI/CD - Runners - continue - DONE!
