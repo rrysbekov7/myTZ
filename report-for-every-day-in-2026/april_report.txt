@@ -164,3 +164,7 @@
 27.04.2026
 1)Duolingo - 7lessons - DONE!
 2)Linux - help, --help, which, type, man - DONE!
+=====================================
+1)Duolingo - 8lessons - DONE!
+2)Linux - man, alias, unalias - DONE!
+3)Gitlab CI/CD - continue - DONE!
