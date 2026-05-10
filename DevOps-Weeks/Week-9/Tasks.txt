@@ -444,6 +444,36 @@ except requests.exceptions.RequestException as error:
 
 
 
+repeats:
+1. https://www.youtube.com/watch?v=R1a-1JYfiQA - через 2 дня - DONE!
+2. Linux - repeat all 5 groups - сейчас
+
+
+
+
+
+
+
+
+
+1. https://www.youtube.com/watch?v=R1a-1JYfiQA - через 6 дня
+2. https://www.youtube.com/watch?v=WflvuVPvCL8 - after 3 days
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

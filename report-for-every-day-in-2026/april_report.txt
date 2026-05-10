@@ -150,3 +150,27 @@
 24.04.2026
 1)Duolingo - 7lessons - DONE!
 2)Linux group symbols - * and ?
+=====================================
+25.04.2026
+1)Duolingo - 7lessons - DONE!
+2)Linux - symlink and hardlink - DONE!
+3)Linux - *-?-[]-{} - DONE!
+4)Gitlab - CI/CD - Runners - continue - DONE!
+=====================================
+26.04.2026
+1)Duolingo - 6lessons - DONE!
+2)Gitlab CI/CD - Runners - continue - DONE!
+=====================================
+27.04.2026
+1)Duolingo - 7lessons - DONE!
+2)Linux - help, --help, which, type, man - DONE!
+=====================================
+28.04.2026
+1)Duolingo - 8lessons - DONE!
+2)Linux - man, alias, unalias - DONE!
+3)Gitlab CI/CD - continue - DONE!
+=====================================
+29.04.2026
+1)Duolingo - 8lessons - DONE!
+2)Gitlab CI/CD - continue - DONE!
+3)Gitlab CI/CD - artifacts, badges, needs, rules, predefined env - DONE!
