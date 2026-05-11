@@ -1,0 +1,4 @@
+11.05.2026
+1.Duolingo - 7lessons - DONE!
+2.Linux - 3-4 themes - repeat - DONE!
+3.Gitlab CI/CD - Docker image-AWS in CI - start - DONE!
